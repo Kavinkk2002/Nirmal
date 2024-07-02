@@ -1,0 +1,1263 @@
+<html>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<head>
+    <title></title>
+    <script language="javascript" src="LoadMB.js?n=41"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+
+    <style>
+        .Login {
+            width: 30%;
+            height: 50%;
+            position: relative;
+            border-radius: 20px;
+            color: #FCFCFC;
+            border: 0px solid #141f032f;
+            left: 35%;
+            top: 30%;
+            height: 40%;
+            width: 30%;
+            background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #e5e8e8af), color-stop(1.0, #e5e8e87e));
+
+            background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #5D6D7E), color-stop(1.0, #2E4053));
+        }
+
+        .Hdrs {
+            width: 98%;
+            left: 5%;
+        }
+
+        .About {
+            cursor: hand;
+            border: 1px solid #787878;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            padding: 2px;
+
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #5D6D7E), color-stop(1.0, #2E4053));
+            cursor: pointer;
+            font-size: 10px;
+            color: #FBFCFC;
+
+        }
+
+        .Products {
+            cursor: hand;
+            border: none;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            padding: 5px;
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 10px;
+            color: #FBFCFC;
+            filter: drop-shadow(#5D6D7E 2px 2px 4px);
+            margin-top: -50px;
+        }
+        .icons{
+            margin-left: -40px;
+            margin-right: 10px;
+        }
+        .Products ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+
+        .Company {
+            cursor: hand;
+            border: 1px solid #787878;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            padding: 2px;
+
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #5D6D7E), color-stop(1.0, #2E4053));
+            cursor: pointer;
+            font-size: 10px;
+            color: #FBFCFC;
+
+        }
+
+
+
+        .Product {
+
+            border-top-right-radius: 5px 5px;
+            border-top-left-radius: 5px 5px;
+
+            background-image: linear-gradient(120deg, #7FB3D5 0%, #7FB3D5 100%);
+
+            padding: 5px;
+        }
+
+        .Module {
+
+            border-top-right-radius: 5px 5px;
+            border-top-left-radius: 5px 5px;
+            background-image: linear-gradient(120deg, #7FB3D5 0%, #7FB3D5 100%);
+            padding: 5px;
+
+        }
+
+        .Company {
+
+            border-top-right-radius: 10px 10px;
+            border-top-left-radius: 10px 10px;
+            padding: 5px 20px 5px 15px;
+            background-image: linear-gradient(120deg, #7FB3D5 0%, #7FB3D5 100%);
+            padding: 10px;
+
+        }
+
+        .input-icons {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+
+
+        .input-icons i {
+            position: absolute;
+        }
+
+
+
+
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+
+        .sidenav {
+            height: 500px;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 30;
+            moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            color: #FFFFFF;
+
+            background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #366e81), color-stop(1.0, #366e81));
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #5D6D7E), color-stop(1.0, #2E4053));
+
+
+
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            color: #EFEFEF;
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+
+
+        @media screen and (max-width:700px) {
+
+            .login {
+                left: 10%;
+                top: 30%;
+                height: 50%;
+                width: 80%;
+
+            }
+
+            .Hdrs {
+                width: 98%;
+                left: 5%;
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+            }
+            #dRemainders{
+            right:10px;
+            }
+        }
+        
+
+        .RemainBox .closeRightbtn {
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .RemainBox {
+            border: 1px #414444 solid;
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            bottom: 1;
+            right: 0;
+            overflow-x: hidden;
+            transition: 0.5s;
+            color: E5E8E8;
+
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+
+            background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #E5E8E8), color-stop(1.0, #CCD1D1));
+
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #5D6D7E), color-stop(1.0, #2E4053));
+            background1: rgba(185, 212, 209, 0.226);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+        .UserBox .closeRightbtn {
+            font-size: 10px;
+            margin-left: 50px;
+        }
+
+        .UserBox {
+            border: 1px #414444 solid;
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            bottom: 1;
+            right: 0;
+            overflow-x: hidden;
+            transition: 0.5s;
+            color: rgba(0, 0, 0, 0.671);
+
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #E5E8E8), color-stop(1.0, #CCD1D1));
+            background1: rgba(185, 212, 209, 0.226);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+
+        .ChatBox .closeRightbtn {
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .ChatBox {
+
+            border: 1px #414444 solid;
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            bottom: 1;
+            right: 0;
+            overflow-x: hidden;
+            transition: 1.2s;
+            color: black;
+
+
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+
+
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #E5E8E8), color-stop(1.0, #CCD1D1));
+            background1: rgba(185, 212, 209, 0.226);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .dp {
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: large;
+            font-size: 15px;
+            background-image: linear-gradient(to top, rgb(82, 82, 82), black);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .tdUser {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: large;
+            font-size: 12px;
+        }
+
+        .tdUser:hover {
+            transition: 0.5s;
+            color: white;
+            background-image: linear-gradient(to left, rgba(67, 121, 146, 0.753), rgb(15, 86, 133));
+        }
+
+        .Header {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: large;
+            font-size: 12px;
+        }
+
+        .Header:hover {
+            transition: 0.5s;
+            color: white;
+            background-image: linear-gradient(to left, rgba(121, 155, 170, 0.753), rgb(16, 92, 143));
+        }
+
+        .Products1{
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: large;
+            font-size: 20px;
+            background-image: linear-gradient(to top,rgba(204, 174, 121, 0.945),rgb(202, 137, 16)); 
+            -webkit-background-clip: text;
+            color: transparent; 
+        }        
+
+        #dLogin{
+            background-image: linear-gradient(to top,#596a79,#596a79);
+            box-shadow: rgb(206, 202, 202) 1px 2px 4px 6px;
+        }
+
+
+        .sgIn {
+            font-family: "Jost", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 20px;
+            background-image: linear-gradient(to top,rgba(231, 231, 231, 0.651),white);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-right: 5px;
+        }
+        
+        .imgg1{
+            filter: drop-shadow(#596a79 2px 2px 5px);
+        }
+        .imgg1:hover{
+            transition: 0.3s;
+            transform: scale(1.1);
+            filter: invert(37%) sepia(99%) saturate(896%) hue-rotate(9deg) brightness(92%) contrast(93%);
+        }
+
+        #txtUser,
+        #txtPass {
+            padding: 10px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: large;
+            font-size: 10px;
+            color: black;
+            outline: none;
+            background-color: transparent;
+            color: white;
+            border-radius: 10px;
+            width: 60%;
+            height: 25px;
+            position: relative;
+            left: 10px;
+            border-bottom: solid rgb(148, 98, 6) 1px;    
+        }
+
+        #txtUser:hover {
+            transition: 0.5s;
+            box-shadow: #212F3D   2px 2px 4px;
+        }
+
+        #txtPass:hover {
+            transition: 0.5s;
+            box-shadow: #212F3D  2px 2px 4px;
+        }
+        #dRemainders{
+            right: 10px;
+            display: none;
+        }
+        .LoginButton{
+            background-image: linear-gradient(to left,rgb(109, 184, 180),rgb(26, 148, 142));
+            outline: none;
+            box-shadow: rgb(51, 51, 51) 1px 1px 2px;
+        }
+        .LoginButton:hover{
+            transition: 0.5s;
+            box-shadow: black 2px 2px 4px;
+        }
+        .forget{
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: large;
+        }
+        .MobiHeading{
+            font-weight: large;
+            font-weight: 400;
+            background-image: linear-gradient(to top,rgba(209, 99, 99, 0.856),red);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .para{
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: large;
+        }
+        @keyframes animate{
+            from{
+                transform:translateX(-150px);
+            }
+            to{
+                transform:translateX(0px);
+            }
+        }
+        @keyframes remain{
+            from{
+                transform:translateX(200px);
+            }
+            to{
+                transform: translateX(0px);
+            }
+        }
+
+        .ani1{
+            animation: animate 0.5s ease;
+        }
+        .ani2{
+            animation: animate 1s ease;
+        }
+        .ani3{
+            animation: animate 1.5s ease;
+        }
+        .ani4{
+            animation: animate 2s ease;
+        }
+        .animi1{
+            animation: animate 1s ease;
+        }
+        .animi2{
+            animation: animate 1.5s ease;
+        }
+        .animi3{
+            animation: animate 2s ease;
+        }
+        .animi4{
+            animation: animate 2.5s ease;
+        }
+    </style>
+
+    <script lang="javascript">
+
+        var GUserid = 0;
+        var GEmpid = 0;
+
+
+
+        var GHeader = ""; var GSP = "";
+
+
+        function fLogin() {
+
+
+            var st = "exec [MLogin] @func=1,@usrname='" + txtUser.value + "',@pwd='" + txtPass.value + "'";
+
+            var res = document.getElementById("DFrame").contentWindow.fSaveCmd(st);
+
+
+            // alert(res);
+
+            if (res != "='Invalid User Profile'") {
+                GUserid = res;
+                dBoxes.style.display = "none";
+                dProducts.style.display = "none";
+
+
+                var st = "exec [MLogin] @func=2,@usrid=" + GUserid + "";
+
+                var GT = document.getElementById("DFrame").contentWindow.fQry(st).split("!!");
+
+                if (GT.length > 1) {
+                    GHeader = GT[0].split("~");
+                    GSP = GT[1].split("~");
+                    GEmpid = fGetColVal("Empid");
+
+                    UserDetails.innerHTML = fGetColVal("UserDetails");
+                    dLogin.style.display = "none";
+                    document.getElementById("DFrame").src = "DBser.aspx?Page=Home";
+
+                }
+
+                fStart();
+                fDisplayPanel();
+
+
+
+            }
+
+
+
+            //GUserid = Userid;
+
+
+        }
+
+        function fHome(){
+
+            document.getElementById("DFrame").src = "DBser.aspx?Page=Home";
+
+        }
+
+
+        function fLoginKey() {
+            if (window.event.keyCode == 13) {
+                fLogin(0);
+            }
+        }
+
+
+
+        function fDisplayPanel() {
+
+            tdLeftPanel.style.display = "";
+            //tdSearch.style.display="";
+            //tdPeriod.style.display="";
+            //tdFilter.style.display="";
+            tdlogout.style.display = "";
+
+            //tdProduct.style.display="none";
+            //tdPortal.style.display="none";
+        }
+
+
+        function fLogout() {
+            var st = "exec [TransRemains_Mobile] @Opt=2,@Userid=" + GUserid + ",@Empid=" + GEmpid + "";
+
+            //DFrame.contentWindow.location.href = "ePfile.aspx?Show=Logout";
+            window.location.href = "Mobile.htm";
+
+            LogPanel.style.display = "none";
+
+            dBoxes.style.display = "";
+            dProducts.style.display = "";
+            //dLogin.style.display = "";
+            UserDetails.innerHTML = "";
+            //MFilter.style.display = "none";
+            txtPass.value = "";
+
+            //fAlign();
+            fRemoveNotes();
+        }
+
+
+        function fStart() {
+            setInterval(fNotity, 5000);
+
+        }
+
+        function fOpenNotify() {
+
+            var st = "exec TransRemains_Mobile @Opt=2,@Userid=" + GUserid + ",@Empid=" + GEmpid;
+            document.getElementById("DFrame").contentWindow.fSaveCmd(st);
+            fNotity();
+        }
+
+
+        var ii = 0;
+        function fNotity() {
+
+            var st = "exec TransRemains_Mobile @Opt=1,@Userid=" + GUserid + ",@Empid=" + GEmpid;
+            console.log(st);
+            //  alert(st);
+
+            var GT = document.getElementById("DFrame").contentWindow.fQry(st).split("!!");
+            //console.log(GT.length);
+
+            if (GT.length > 2) {
+                for (var i = 1; i < GT.length - 1; i++) {
+                    var sp = GT[i].split("~");
+
+                    fRemainders(sp[0], sp[1], sp[2], sp[3]);
+                }
+                dRemainders.style.display = "";
+
+            }
+
+        }
+
+
+        function fCreateDivs(val, icons, TransCode, Links) {
+
+            var t = document.createElement("div");
+            t.style.bottom = "1%",
+                t.style.right = "4%",
+                t.className = "Remainders",
+                t.style.position = "absolute",
+                t.style.height = "70px",
+                t.style.margin = "5px",
+                t.style.width = "300px",
+                t.style.zIndex = "4";
+
+            t.innerHTML = "<span style='padding:5px;position:absolute;left:1%;top:1%;height:35px;font-size:10px' > <img src='" + icons + ".png' style=' width:35px;height:35px;' >"
+                + "<span style='position:absolute;top:1px;top1%'><b><u>" + TransCode + "</b></span></u></span>"
+                + " <div style='padding:5px;margin:5px;position:absolute;left:1%;top:10px;color:#000000;font-size:10px' class=subRemain >" + val + "</div>"
+                + "" + Links + ""
+                + "<span style='padding:5px;position:absolute;top:2%;right:1%;font-size:10px;color:#000000' "
+                + " onclick='fCloseRemind(this);' ><img src='Close.png' style='width:20px;height:20px'></span>";
+
+
+            dRemainders.appendChild(t);
+
+        }
+
+        //fRemainders();
+        var b = 5;
+        function fCloseRemind(Obj) {
+            var Tab = fGetObj(Obj, "Remainders");
+            Tab.remove();
+        }
+        function fRemainders(val, icons, TransCode, Links) {
+
+            for (var i = 1; i <= 1; i++) {
+                fCreateDivs(val, icons, TransCode, Links);
+                var x = dRemainders.querySelectorAll(".Remainders");
+                var Obj = x[x.length - 1];
+
+                // Obj.style.transitionTimingFunction = "linear";
+                //Obj.style.transitionDelay   ="2s"; 
+
+                Obj.style.bottom = ((x.length) * 10) + "%";
+
+
+            }
+
+        }
+
+
+
+
+
+
+
+        function fCheckOpacity() {
+            var OFlag = 0;
+
+            document.getElementById("LogPanel").style.opacity = 1;
+            document.getElementById("dHeader").style.opacity = 1;
+            document.getElementById("MFilter").style.opacity = 1;
+
+
+
+        }
+
+        function fLowOpacity() {
+            document.getElementById("LogPanel").style.opacity = 0.3;
+            document.getElementById("dHeader").style.opacity = 0.3;
+            document.getElementById("MFilter").style.opacity = 0.3;
+        }
+
+
+        function fCloseDiv(ObjText) {
+
+            eval(ObjText).style.display = "none";
+            fCheckOpacity();
+        }
+
+
+
+
+
+
+        function fOpenUser() {
+
+            dUsers.style.display = "";
+            dUsers.style.left = "15%";
+            dUsers.style.width = "200px";
+
+            fLowOpacity();
+
+        }
+
+
+
+        function openNav() {
+            document.getElementById("LogPanel").style.width = "12%";
+            document.getElementById("dHeader").style.marginLeft = "10%";
+
+            var Width = 100 - parseInt(document.getElementById("LogPanel").style.width);
+            Width = Width - parseInt(document.getElementById("MFilter").style.width);
+            document.getElementById("dHeader").style.width = Width + "%";
+
+        }
+
+        function closeNav() {
+            document.getElementById("LogPanel").style.width = "0";
+            document.getElementById("dHeader").style.marginLeft = "0";
+            var Width = 100 - parseInt(document.getElementById("LogPanel").style.width);
+            Width = Width - parseInt(document.getElementById("MFilter").style.width);
+
+            document.getElementById("dHeader").style.width = Width + "%";
+
+        }
+
+        function fCloseAll() {
+            switch (window.event.keyCode) {
+                case 27:
+
+                    //MFilters.style.display = "none";
+                    //dCirculars.style.display = "none";
+                    //dCommDisp.style.display = "none";
+                    //dWishes.style.display = "none";
+                    //dUsers.style.display = "none";
+                    //dSettings.style.display = "none";
+                    //document.querySelector(".EditorHTML").style.display = "none";
+                    //document.querySelector(".HELP").style.display = "none";
+
+                    dRemainders.style.display = "none";
+                    dChatBox.style.display = "none";
+                    dUserLists.style.display = "none";
+
+                    //fClosePass();
+
+                    // fRemoveNotes();
+                    fCheckOpacity();
+                    break;
+            }
+        }
+        function fOpenHome(){
+            var home = document.getElementById("dHome");
+            home.scrollIntoView({behavior:"smooth"})
+        }
+
+
+  
+
+
+
+
+    </script>
+</head>
+
+<body onkeyup="fCloseAll();">
+
+    <div id=" LogPanel" class="sidenav">
+    <div style=' overflow:auto;'>
+        <a href='javascript:void(0)' class='closebtn' onclick='closeNav()'>&times;</a>
+    </div>
+    </div>
+
+
+    <div id="dHeader" style="height: 800px;">
+        <table style="width: 100%;height:100%;" border="0" class="MHeaderAll">
+            <Tr valgin="top" style="height: 4%;">
+                <td style="width:2%;" id="tdLeftPanel"><img src="NavigGreen.png"
+                        style="width:20px;height:20px;cursor:pointer;" onclick="openNav();" class=Navig></td>
+                <td width=2% class="dp">Deeproots Technologies
+                    <img src="Deeproots.png" class="CompanyLogo" style="width: 120px;height:30px;display:none;" />
+                </td>
+                <td style="width:40%"></td>
+                <td style='width:10%' align=center class=tdUser id="tdProduct"> <i>eHR-HRMS</i></td>
+                <td style='width:10%' align=center class=Header id="tdPortal">Travel</td>
+                <td align=center style="width:2% ;display: none;" id="tdlogout"><img src="LoggedUsers.png"
+                        style="width:20px;height:20px;" onclick="fOpenUser();" /> </td>
+            </Tr>
+
+
+            <tr style="height: 2%;display:none; ">
+                <td align="center" style="color: #020e11;font-size:15px;">
+                    <h3>Travel Module </h3>
+                </td>
+            </tr>
+
+
+            <tr style="height: 95%;" >
+                <td id=MPanel colspan=6 style="width:90%">
+                    <iframe id="DFrame" src="DBSer.aspx" frameborder=0 scrolling=no marginheight=0 marginwidth=0
+                        style="height:100%;width:100%"></iframe>
+                </td>
+            </tr>
+
+            <tr style="height:2%;" valign=top >
+                <td align="right" colspan="6" _class="Products">
+                    <div style="width: 100%;height:20px;" class="Products"> <span style="padding:5px ; width: 90%;">
+                        <ul class="icons">
+                            <li>
+                                <a><img src="Imgs/home1.png"  onclick="fHome();" title="Suggesstions "
+                                    style="width:18px;height:18px;padding:5px;cursor:pointer;" class="imgg1"></a>
+                            </li>
+                            <li>
+                                <img src="Imgs/2users.png" onclick="fOpenUsers();" title="Users "
+                            style="width:20px;height:20px;padding:5px;cursor:pointer;" class="imgg1">
+                            </li>
+                            <li>
+                                <img src="Notify.png" onclick="remain();" title="Remainders"
+                            style="width:20px;height:20px;padding:5px;cursor:pointer;" class="imgg1">
+                            </li>
+                            <li>
+                                <img src="Suggestion.png" onclick="fOpenChat();" title="Suggesstions "
+                            style="width:20px;height:20px;padding:5px;cursor:pointer;" class="imgg1">
+                            </li>
+                        </ul> </span>
+                    </div>
+                        
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id=dRemainders _style="z-index: 30;right:10px;bottom:5%;margin:0px;width:0%;height:50%; "
+        style=" position:absolute;   z-index: 50;bottom:3%; height:70%;width:250px;overflow:auto;  "
+        class="RemainBox">
+        <h4>Remainders
+            <img src='Load.png' style='width:20px;height:20px;cursor:hand;position:absolute;right:10%; '>
+            <img src='Cancel.png' onclick='fCloseRemainders(this);'
+                style='width:20px;height:20px;cursor:hand;position:absolute;right:2%; '>
+        </h4>
+    </div>
+
+    <div id=dUsers class="Users" style="position:absolute;  z-index: 20;display:none;right:20%; ">
+        <table cellspacing=0 id=Table7 width=100% align=left border=0>
+            <tr class=BoxHead>
+                <td width=80%>
+                    <h2>&nbsp;</h2>
+                </td>
+                <td align=center><img src="icons/Close.png" style="width:20px;height:20px;"
+                        onclick="fCloseDiv('dUsers');"></td>
+            </tr>
+
+            <tr>
+                <td colspan=2 id=UserDetails>
+                    <p class=Company>User Details</p>
+                </td>
+            </tr>
+            <tr style="display: none;">
+                <td>
+
+                    <u><span class="Clicks" onclick="fOpenReset();">Reset Password</span></u>
+                    <u><span class="Clicks" onclick="fOpenHistory();" style="display:none">Log History</span></u>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+    <div id="dBoxes" style="margin: 10px; position: absolute;left:2%; top:6%;height:35%;width:90%;z-index:25; ">
+        <table style="width: 100%;" cellspacing="0" border="0">
+
+            <tr style="height: 80px;">
+                <td colspan="2">
+                    <span class="Products1" style="height: 150px;padding:10px;" >Employee Portal</span>
+                    <img src="M6.jpg"
+                        style="width: 90%;height:100%; margin:20px; -moz-border-radius: 15px; -webkit-border-radius: 15px;display:none;">
+
+                </td>
+            </tr>
+
+            <tr style="height: 120px;">
+                <td colspan="2">
+                   
+                        <div id=dLogin class=Apps style=" font-size:10px">
+                            <table cellspacing=0 id=tabLogin align=center border=0 style="margin: 10px;width:90%">
+                                <tr height=20px>
+                                    <td colspan=2>
+                                        <h2 style="color:#FBFCFC; "><b class="sgIn">Sign In</b><img src="Imgs/enter2.png"
+                                                style="width: 20px;height:20px;"></h2>
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr height=25px>
+                                    <td colspan="2" align="center"><img src="Imgs/user11.png"
+                                            style="height:25px;width:25px;position:relative;top:10px;">
+
+                                        <input type=text tabindex=1 id="txtUser" name="txtUser" _class=tabLogins
+                                            value="User Name" onclick="fUserName(this);" onblur="fValidUserName(this);"
+                                            _class="LoginBox" />
+
+                                    </td>
+                                </tr>
+
+                                <tr height=20px>
+                                    <td colspan=2></td>
+                                </tr>
+
+                                <tr height=25px>
+                                    <td align="center">
+                                        <img src="Imgs/pass10.png"
+                                            style="height:25px;width:25px;position:relative;top:10px;">
+                                        <input type=text tabindex=2 class=Pass id="txtPass" name="txtPass"
+                                            onkeyup="fLoginKey();" _class=tabLogins value="Password"
+                                            _onclick="fPassWord(this);" onblur="fValidUserName(this);"  />
+
+                                    </td>
+                                </tr>
+
+                                <tr height=15px>
+                                    <td colspan=2></td>
+                                </tr>
+
+                                <tr height=25px>
+                                    <td _class=tdd align=center colspan=2 id="sigbtn">
+                                        <label id=bLogin class="LoginButton" tabindex=3 onkeyup="fLoginKey();"
+                                            onclick="fLogin(0);">Sign In</label>
+
+                                        <label id=Label2 class="LoginConditions" style="display: none;" tabindex=3
+                                            onkeyup="fLoginKey();" onclick="fConditions();">Conditions</label>
+                                        <script language="javascript">
+
+                                            function fLoginKey() {
+                                                if (window.event.keyCode == 13) {
+                                                    fLogin(0);
+                                                }
+                                            }
+
+                                            function fConditions() {
+                                                fRemainders();
+                                                dLoginConditions.style.display = "";
+                                            }
+                                        </script>
+
+
+                                    </td>
+                                </tr>
+
+                                <tr height=25px>
+                                    <td align="right">
+                                        <u style="color:#FBFCFC; font-size: 11px;" class="forget">Forget Password</u>
+
+                                    </td>
+
+
+                            </table>
+                        </div>
+                    
+
+                </td>
+            </tr>
+
+
+
+
+        </table>
+        <!--</table>-->
+    </div>
+
+    <div id=dProducts class="dPro" style="margin: 10px; position: absolute;left:2%; top:50%;height:35%;width:90%;z-index:25; ">
+        <table cellspacing="0" class="PContent" style="width: 90%;margin:10px;">
+            <tr style="height:80px;" class="PContent" >
+                <td class="ani1">
+
+                    <span class="MobiHeading" > About Product </span>
+                    <p class="para">
+                        eHR Mobile Application integrated with Portal Modules
+                    </p>
+
+                </td>
+                <td class="animi1"><img src="lightarrows.png" style="position: relative;top:1px; width: 25px;height: 25px;"> </td>
+            </tr>
+
+            <tr style="height:80px;" class="PContent" >
+                <td class="ani2">
+                    <span class="MobiHeading"   >About Company </span>
+                    <p  class="para">
+                        Some examples of content include blogs,<br> emailers, newsletters,
+                    </p>
+                </td>
+                <td class="animi2"><img src="lightarrows.png" style="position: relative;top:1px; width: 25px;height: 25px;"> </td>
+            </tr>
+            <tr class=PContent style="height:80px;" >
+                <td class="ani3">
+
+
+                    <span class="MobiHeading"  >Users</span>
+                    <p   class="para">
+                        Some examples of content include blogs, emailers, newsletters, </p>
+
+                </td>
+                <td class="animi3"><img src="lightarrows.png" style="position: relative;top:1px; width: 25px;height: 25px;"> </td>
+            </tr>
+            <tr class=PContent style="height:80px;">
+                <td class="ani4">
+
+                    
+                        <span class="MobiHeading" >Users</span>
+                    <p   class="para">
+                        Some examples of content include blogs, emailers, newsletters,
+                    </p>
+                </td>
+                <td class="animi4"><img src="lightarrows.png" style="position: relative;top:1px; width: 25px;height: 25px;"> </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div id="MFilter" class="MFilters" style="z-index: 30;margin:0px;width:0%;height:100%; ">
+        <table valign=top border=0>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id=dUserLists _style="z-index: 30;right:10px;bottom:5%;margin:0px;width:0%;height:50%; "
+        style="display: none; position:absolute;   z-index: 20;right:10px;bottom:3%; height:90%;width:400px;overflow:auto;font-size: 12px;  "
+        class="UserBox">
+        <br>UserLists<br>
+        <img src='Load.png' style='width:20px;height:20px;cursor:hand;position:absolute;right:10%; '>
+        <img src='Cancel.png' onclick='fCloseUsersLists(this);'
+            style='width:20px;height:20px;cursor:hand;position:absolute;right:2%; '> <br>
+
+        <table border=0 style="width:100%;font-weight:normal">
+            <tr align="center">
+                <td class="TabActive" id="dTeams" onclick="fUsers(this,1);">Teams</td>
+                <td class="Tabselect" id="dHODS" onclick="fUsers(this,2);">HODs</td>
+                <td class="Tabselect" id="dHRDS" onclick="fUsers(this,3);">HRDs</td>
+                <td class="Tabselect" id="dAdmin" onclick="fUsers(this,4);">Admin</td>
+            </tr>
+            <tr align="center">
+                <td colspan="4" style="height:800px;">
+                    <div id="dUserData" style="overflow: auto;height:800px;;width:100%;font-weight:normal">
+
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+        </h4>
+    </div>
+
+    <div id=dChatBox _style="z-index: 30;right:10px;bottom:5%;margin:0px;width:0%;height:50%; "
+        style="display: none; position:absolute;   z-index: 20;right:10px;bottom:3%; height:90%;width:400px;overflow:auto;  "
+        class="ChatBox">
+
+        <h4>Message Box
+            <img src='Load.png' style='width:20px;height:20px;cursor:hand;position:absolute;right:10%; '>
+
+            <img src='Cancel.png' onclick='fCloseChat(this);'
+                style='width:20px;height:20px;cursor:hand;position:absolute;right:2%; '>
+
+        </h4>
+
+        <h5 class="UserID">Users : </h5>
+
+        <table border=0 style="width:100%">
+            <tr align="center">
+                <td class="TabActive" id="dSuggests" onclick="fSuggests(this,1);">Message Box</td>
+                <td class="Tabselect" id="dSLists" onclick="fSuggests(this,2);">My Message</td>
+                <td class="Tabselect" id="dSReceived" onclick="fSuggests(this,3);">Recevied Message</td>
+
+            </tr>
+            <tr>
+                <td colspan=5>
+                    <div id="dSuggestBox">
+
+
+                        <table border=0 style="width:90%">
+                            <tr>
+                                <td>
+                                    <h4> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="button" id="bsaveSuggest"
+                                            value="New" onclick="fNewSuggestion()">
+
+                                        <select id=selMsgType>
+                                            <option value="1">Suggestion</option>
+                                            <option value="2">Request</option>
+                                        </select>
+                                    </h4>
+                                    <textarea cols="10" rows="20" id=txtSuggestion class="DB"
+                                        style="width: 98%;color:#2E4053;text-align: left; "></textarea>
+                                    <input type="hidden" value="67" id="hSuggestID">
+                                </td>
+                            </tr>
+                            <Tr>
+                                <td align="right">
+                                    <input type="button" id="bsaveSuggest" value="Save Draft"
+                                        onclick="fnsaveSuggestion()">
+                                    <input type="button" id="bSForwardTo" value="Forward To" style="display:none;"
+                                        onclick="fOpenUserChat()">
+                                    <input type="button" id="bSForward" value="Forward" style="display:none;"
+                                        onclick="fForward(txtSuggestion,0)">
+                                </td>
+                            </Tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div id="dMySuggestList" style="overflow: auto;height:800px;;width:100%;display: none;">
+                        My Suggested List
+                    </div>
+
+                    <div id="dRecivedList" style="overflow: auto;height:800px;;width:100%;display: none;">
+                        My Received Suggested List
+
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+
+        dHeader.style.height = screen.height;
+        LogPanel.style.height = screen.height;
+
+
+        function fValidUserName(Obj) {
+            if (Obj.value == "") Obj.value = "User Name";
+        }
+        function fUserName(Obj) {
+            if (Obj.value == "User Name")
+                Obj.value = "";
+            else if (Obj.value.length > 0) {
+                return;
+            }
+
+            else if (Obj.value.length > 0) {
+                Obj.value = "User Name";
+            }
+
+        }
+        
+        function remain(){
+            var remainder = document.getElementById("dRemainders");
+            if(remainder.style.right === "-260px" || remainder.style.right === ""){
+                remainder.style.animation = "remain 1s ease"
+                remainder.style.display = "block"
+            }
+        }
+
+
+        function fOpenRemains() {
+            fUnHideBoxes();
+            if (dRemainders.style.display == "") {
+                dRemainders.style.display = "none";
+                fCheckOpacity();
+            }
+            else {
+                dRemainders.style.display = "";
+                fLowOpacity();
+
+            }
+        }
+
+
+        function fUnHideBoxes() {
+
+            // dUserLists.style.display="none";
+            //   dChatBox.style.display="none";
+            dRemainders.style.display = "none";
+
+        }
+
+        function fCheckOpacity() {
+            var OFlag = 0;
+
+            document.getElementById("LogPanel").style.opacity = 1;
+            document.getElementById("dHeader").style.opacity = 1;
+            document.getElementById("MFilter").style.opacity = 1;
+
+
+
+        }
+
+        function fLowOpacity() {
+            document.getElementById("LogPanel").style.opacity = 0.3;
+            document.getElementById("dHeader").style.opacity = 0.3;
+            document.getElementById("MFilter").style.opacity = 0.3;
+        }
+
+
+
+        function fCloseRemainders(Obj) {
+
+            dRemainders.style.animation = "remain 1s ease ";
+            dRemainders.style.display = "none"
+            fCheckOpacity();
+
+        }
+
+        function fCloseChat(Obj) {
+            dChatBox.style.display = "none";
+            fCheckOpacity();
+
+        }
+
+        function fCloseUsersLists(Obj) {
+
+            dUserLists.style.display = "none";
+            fCheckOpacity();
+
+        }
+
+
+
+
+
+        /* function fPassWord(Obj)
+         {
+             txtTemp = document.createElement('INPUT');
+             txtTemp.setAttribute('TYPE', 'TEXT');
+             txtTemp.setAttribute('VALUE', txtPass.value);
+             txtTemp.setAttribute('style', "position: relative;left:50px;   border-style: solid;border-width: 0px 0px 1px 0px;background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #e5e8e84f), color-stop(1.0, #e5e8e88f ));"
+                          +" font-style: italic;width: 80%;height:25px");
+             txtTemp.onchange = function () {
+                 txtPass.value = this.value;
+              };
+              txtPass.parentNode.insertBefore(txtTemp, txtPass.nextSibling);
+              txtPass.style.display = "none";
+
+         }*/
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>

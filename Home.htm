@@ -1,0 +1,1143 @@
+<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<head>
+    <title></title>
+    <script language="javascript" src="LoadMB.js?n=41"></script>
+    <script language="javascript" src="TransMobile.js?n=41"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script src="https://unpkg.com/esri-leaflet@3.0.10/dist/esri-leaflet.js"></script>
+    <script src="https://unpkg.com/esri-leaflet-vector@4.2.2/dist/esri-leaflet-vector.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+    <script src="https://unpkg.com/esri-leaflet-geocoder@3.1.4/dist/esri-leaflet-geocoder.js" crossorigin=""></script>
+
+
+
+
+    <style>
+        .Indent {
+            text-indent: 50px;
+        }
+
+        .BIndent {
+            text-indent: 10px;
+        }
+
+        #map {
+
+            width: 90%;
+            height: 50vh;
+        }
+
+
+        @media screen and (max-width:700px) {
+
+
+            .GridViewer {
+                width: 90%;
+                min-height: 21cm;
+                padding: 0.5cm;
+                margin: 0.3cm auto;
+                border: 1px #979e9d solid;
+                border-radius: 1px;
+                background: rgba(185, 212, 209, 0.226);
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+            }
+
+        }
+    </style>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            left: 5%;
+            top: 50px;
+
+            width: 80%;
+            height: 200vh;
+        }
+
+        .MobileVeiwer {}
+
+        .welcome {
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: large;
+            font-size: 14px;
+        }
+        .dte{
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: large;
+            font-size: 15px;
+        }
+        .IBox{
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: large;
+            font-size: 12px;
+        }
+        .IBox p:hover{
+            transition: 0.2s;
+            text-shadow: black 2px 2px 4px;
+            transform: scale(1.1);
+        }
+        .Apps{
+            background-image: linear-gradient(to top,#596a79,#596a79);
+            box-shadow: rgb(214, 214, 214) 1px 2px 4px 6px;
+        }
+        #purchase{
+            background-image: linear-gradient(to left,rgb(120, 186, 202),rgb(10, 137, 168));
+            box-shadow: black 2px 2px 4px;
+        }
+        #purchase:hover{
+            transition: 0.5s;
+            box-shadow: black 4px 4px 8px;
+        }
+        #punch{
+            background-image: linear-gradient(to left,rgb(218, 180, 111),rgb(173, 117, 13));
+            box-shadow: black 2px 2px 4px;
+        }
+        #punch:hover{
+            transition: 0.5s;
+            box-shadow: black 4px 4px 8px;
+        }
+        #duration{
+            background-image: linear-gradient(to left,rgb(114, 179, 174),rgb(18, 199, 190));
+            box-shadow: black 2px 2px 4px;
+            color: white;
+        }
+        #duration:hover{
+            transition: 0.5s;
+            box-shadow: black 4px 4px 8px;
+        }
+        .txt{
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: large;
+            font-size: 12px;
+        }
+
+        @keyframes animate{
+            from{
+                transform: translateY(-100px);
+            }
+            to{
+                transform: translateY(0);
+            }
+        }
+        @keyframes animate1{
+            from{
+                transform: translateX(-150px);
+            }
+            to{
+                transform: translateX(0);
+            }
+        }
+        @keyframes appsani{
+            from{
+                transform: translateY(-100px);
+            }
+            to{
+                transform: translateY(0);
+            }
+        }
+        #Leave{
+            animation:appsani 0.1s ease;
+        }
+        #OnDuty{
+            animation:appsani 0.2s ease;
+        }
+        #Permission{
+            animation:appsani 0.3s ease;
+        }
+        #CompOff{
+            animation:appsani 0.4s ease;
+        }
+        #Attendance{
+            animation:appsani 0.5s ease;
+        }
+        #Advance{
+            animation:appsani 0.6s ease;
+        }
+        #LVList{
+            animation:appsani 0.7s ease;
+        }
+        #ODList{
+            animation:appsani 0.8s ease;
+        }
+        #PMList{
+            animation:appsani 0.9s ease;
+        }
+
+        .ani1{
+            animation: animate 0.5s ease;
+        }
+        .ani2{
+            animation: animate 1s ease;
+        }
+        .ani3{
+            animation: animate 1.5s ease;
+        }
+        #animi1{
+            animation: animate 1s ease;
+        }
+        #animi2{
+            animation: animate 1.5s ease;
+        }
+        #animi3{
+            animation: animate 2s ease;
+        }
+        .anii1{
+            animation: animate1 1.5s ease;
+        }
+        .anii2{
+            animation: animate1 2s ease;
+        }
+        .anii3{
+            animation: animate1 2.5s ease;
+        }
+        #Leave,#OnDuty,#Permission,#Compoff,#Attendance,#Advance,#LVList,#ODList,#PMList{
+            box-shadow: rgb(122, 122, 122) 1px 1px 3px;
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: large;
+            font-size: 12px;
+        }
+        #Leave:hover,#OnDuty:hover,#Permission:hover,#Compoff:hover,#Attendance:hover,#Advance:hover,#LVList:hover,#ODList:hover,#PMList:hover{
+            transition: 0.5s;
+            box-shadow: rgb(54, 54, 54) 2px 2px 4px;
+            text-shadow: black 2px 2px 4px;
+        }
+        #Leave:hover p,#OnDuty:hover p,#Permission:hover p,#Compoff:hover p,#Attendance:hover p,#Advance:hover p,#LVList:hover p,#ODList:hover p,#PMList:hover p{
+            transition: 0.3s;
+            transform: scale(1.1);
+            text-shadow: black 2px 2px 4px;
+        }
+        #TransLeave{
+            background-color: #6e889e;
+            box-shadow: #596a79 2px 2px 5px;
+        }
+        #TransLeave input{
+            outline: none;
+            border: none;
+            border-bottom: solid black 1px;
+            box-shadow: rgb(71, 71, 71) 2px 2px 4px;
+        }
+        #TransLeave input:hover{
+            transition: 0.5s;
+            box-shadow: black 2px 2px 4px;
+        }
+        #TransOD{
+            background-color: #6e889e;
+            box-shadow: #596a79 2px 2px 5px;
+        }
+        #TransOD input{
+            outline: none;
+            border: none;
+            border-bottom: solid black 1px;
+            box-shadow: rgb(71, 71, 71) 2px 2px 4px;
+        }
+        #TransOD input:hover{
+            transition: 0.5s;
+            box-shadow: black 2px 2px 4px;
+        }
+        #TransPM{
+            background-color: #6e889e;
+            box-shadow: #596a79 2px 2px 5px;
+        }
+        #TransPM input{
+            outline: none;
+            border: none;
+            border-bottom: solid black 1px;
+            box-shadow: rgb(71, 71, 71) 2px 2px 4px;
+        }
+        #TransPM input:hover{
+            transition: 0.5s;
+            box-shadow: black 2px 2px 4px;
+        }
+        #TransAttend{
+            background-color: #6e889e;
+            box-shadow: #596a79 2px 2px 5px;
+        }
+        #TransAttend input{
+            outline: none;
+            border: none;
+            border-bottom: solid black 1px;
+            box-shadow: rgb(71, 71, 71) 2px 2px 4px;
+        }
+        #TransAttend input:hover{
+            transition: 0.5s;
+            box-shadow: black 2px 2px 4px;
+        }
+        #TransCompOff{
+            background-color: #6e889e;
+            box-shadow: #596a79 2px 2px 5px;
+        }
+        #TransCompOff input{
+            outline: none;
+            border: none;
+            border-bottom: solid black 1px;
+            box-shadow: rgb(71, 71, 71) 2px 2px 4px;
+        }
+        #TransCompOff input:hover{
+            transition: 0.5s;
+            box-shadow: black 2px 2px 4px;
+        }
+        #TransCalendar{
+            background-color: #6e889e;
+            box-shadow: #596a79 2px 2px 5px;
+        }
+        #TransCalendar input{
+            outline: none;
+            border: none;
+            border-bottom: solid black 1px;
+            box-shadow: rgb(71, 71, 71) 2px 2px 4px;
+        }
+        #TransCalendar input:hover{
+            transition: 0.5s;
+            box-shadow: black 2px 2px 4px;
+        }
+
+        
+    </style>
+
+
+
+<body _onload="init();">
+    <Span <img src='Home.png' id=Home style='width: 20px;height:20px;cursor:pointer; ' onclick='fBack(this);'></span>
+
+    <Span <img src='Maps.png' id=Maps style='width: 20px;height:20px;cursor:pointer;display:none '
+        onclick='fBack(this);'></span>
+
+    <div id="sHeader" style="position: absolute;left:1%;top:1px;height: 20px;width:95%;;">
+        <span style="padding: 10px;">
+
+        </span>
+        <span class="Heading gHeader" style="padding: 10px;">
+
+
+        </span>
+
+        <table style="width: 100%;height:100%;">
+
+
+            <tr style="height:5%">
+
+                <td colspan="2" align="left" class="welcome">
+                    Welcome <i> Martin Vimal</i>
+
+                </td>
+                <td align="right" class="dte">
+                    <b>May 2024</b>
+                    <br>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <div id="sEmployee" clas="designs"
+        style="position: absolute;left:20px;top:95px;height: 90px;width:87%;display: none;">
+        <span style="width: 100%;height:100%;" id="lEmps">
+        </span>
+
+        </td>
+    </div>
+
+    <div id="dHome" style="position: absolute;left:20px;top:95px;width: 90%;z-index:1">
+        <input type="hidden" class="Backs" value=""><br>
+        <div class="Apps" style="width: 100%;height:60%;">
+
+            <table style="width: 100%;height:100%;">
+                <tr style="height:6%">
+                    <td align="center" class="MClicks" id="CheckInLists" onclick="fOpenDiv(this)" style="width: 30%;">
+                        <div class="IBox">
+                            <img src="Checkin.png"
+                                style="width: 35px;height:35px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);"><br><br> <p>Tracking List</p>
+                        </div>
+                    </td>
+
+                    <td align="center" class="MClicks" id="Applications" onclick="fOpenDiv(this)" style="width: 30%;">
+                        <div class="IBox">
+                            <img src="Applications.png" style="width: 35px;height:35px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);">
+                            <br><br><p>Applications</p>
+                        </div>
+                    </td>
+                    <Td align="center" id="Approvals" class="MClicks" onclick="fOpenDiv(this,3)" style="width: 30%;">
+                        <div class="IBox">
+                            <img src="Approved.png"
+                                style="width: 35px;height:35px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);"><br><br><p>Approvals</p>
+                        </div>
+                    </Td>
+
+                </tr>
+                <tr style="height:6%">
+
+                    <Td align="center" id="Payslip" class="MClicks" onclick="fOpenDiv(this)">
+                        <div class="IBox">
+                            <img src="PSlip.png"
+                                style="width: 35px;height:35px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);"><br><br><p>Payslip</p>
+                        </div>
+                    </Td>
+                    <Td align="center" id="Calendar" class="MClicks" onclick="fOpenDiv(this,5)">
+                        <div class="IBox">
+                            <img src="Calicon.png" style="width: 35px;height:35px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);">
+                            <br><br><p>Calendar</p>
+                        </div>
+                    </Td>
+                    <Td align="center" id="Reports" class="MClicks" onclick="fOpenDiv(this,6)">
+                        <div class="IBox">
+                            <img src="Rpticon.png" style="width: 35px;height:35px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);">
+
+                            <br><br><p>Reports</p>
+                        </div>
+                    </Td>
+                </tr>
+
+                <tr style="height:6%">
+                    <Td align="center" id="Payslip" class="MClicks" onclick="fOpenDiv(this)">
+                        <div class="IBox">
+                            <img src="profile.png"
+                                style="width: 35px;height:35px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);"><br><br><p>Profile</p>
+                        </div>
+                    </Td>
+
+                    <Td align="center" id="Payslip" class="MClicks" onclick="fOpenDiv(this)">
+                        <div class="IBox">
+                            <img src="Attendance.png"
+                                style="width: 35px;height:35px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);"><br><br><p>Attendance</p>
+                        </div>
+                    </Td>
+                    <Td align="center" id="Payslip" class="MClicks" onclick="fOpenDiv(this)">
+                        <div class="IBox">
+                            <img src="Work.png"
+                                style="width: 35px;height:35px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);"><br><br><p>Others</p>
+                        </div>
+                    </Td>
+                <tr height="50%">
+                    <td colspan="3">&nbsp;</td>
+                </tr>
+                </tr>
+            </table>
+        </div>
+        <div class="logs" style="height: 50%;width:100%;">
+
+            <table style="width: 100%;">
+                <tr style="height:20px">
+                    <Td></Td>
+                </tr>
+                <tr style="height:20px;display: none;" class="PContent">
+                    <td colspan="2">
+                        <b> In Time Attendance</b>
+                    </td>
+                </tr>
+
+                <tr style="height:50px;" class="PContent" >
+                    <td align="left" class="ani1">
+                        <span class=CheckIn style="height:50px;width:200px;padding:10px"
+                            onclick="fCheckInLoc();" id="purchase">Punched In</span>
+                    </td>
+                    <td class="txt" id="animi1">
+                        <span>Time: <font color="blue"> 09:00 </font></span><br><br>
+                        <span>Location: Palladam</span>
+
+                    </td>
+                    <td class="anii1"><img src="lightarrows.png" style="position: relative;top:1px; width: 25px;height: 25px;"> </td>
+                </tr>
+
+                <tr style="height:20px">
+                    <Td></Td>
+                </tr>
+                <tr style="height:20px;display: none; "
+                    class="PContent">
+                    <td colspan="2">
+                        <b> Out Time Attendance</b>
+                    </td>
+                </tr>
+
+
+
+                <tr style="margin: 50px;" class="PContent" >
+                    <td align="left" style="width: 35%;" class="ani2">
+                        <span class=CheckOut style="height:50px;width:200px;padding:10px"
+                            onclick="fCheckOutLoc();" id="punch">Punch Out</span>
+                    </td>
+                    <td style="width: 65%;" class="txt" id="animi2">
+                        <span> Time:</span><br><br>
+                        <span> Location:</span>
+
+                    </td>
+                    <td class="anii2"><img src="lightarrows.png" style="position: relative;top:1px; width: 25px;height: 25px;"> </td>
+                </tr>
+                <tr style="height:20px">
+                    <Td></Td>
+                </tr>
+
+
+                <tr style="height:20px;display: none;" class="PContent" style="display: none;">
+                    <td colspan="2">
+                        <b> Attendance Duration</b>
+                    </td>
+                </tr>
+
+
+
+                <tr style="height:50px;" class="PContent" >
+                    <td align="left" style="width: 35%;" class="ani3">
+                        <span class=LoginButton style="height:50px;width:200px;padding:10px;"
+                            onclick="fCheckOutLoc();" id="duration">Duration</span>
+                    </td>
+                    <td style="width: 65%;" class="txt" id="animi3">
+                        <span> Dutation Time: <bR>04:10:00 (going)</span><br><br>
+
+                    </td>
+                    <td class="anii3"><img src="lightarrows.png" style="position: relative;top:1px; width: 25px;height: 25px;"> </td>
+                </tr>
+
+
+
+            </table>
+
+        </div>
+    </div>
+
+    <div id="dApplications" style="position: absolute;left:20px;top:95px;width: 85%;display:none;z-index:2">
+        <input type="hidden" class="Backs" value="dHome">
+        <table style="width:100%;height:100%">
+            <tr style="height:10%">
+                <Td colspan="3"> </Td>
+            </tr>
+            <div>
+                <tr style="height:5%;">
+                    <td align="center" class="Apps" id="Leave" style="width: 30%;" onclick="fOpenDiv(this)">
+                        <div class="IBox">
+                            <img src="5.png" style="width: 40px;height:40px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);"><br><br><p style="margin-bottom: 5px;">Leave</p>
+                        </div>
+                    </td>
+    
+                    <td align="center" class="Apps" id="OnDuty" style="width: 30%;" onclick="fOpenDiv(this)">
+                        <img src="6.png" style="width: 40px;height:40px;position: relative; top:15px;"><br><br>
+                        <p style="margin-bottom: 5px;">OnDuty</p>
+                    </td>
+                    <td align="center" class="Apps" id="Permission" style="width: 30%;" onclick="fOpenDiv(this);">
+                        <img src="7.png" style="width: 40px;height:40px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);"><br><p style="margin-top: 25px;">Permission</p>
+                    </td>
+    
+    
+                </tr>
+    
+    
+                <tr style="height:10%">
+                    <td align="center" class="Apps" id="Compoff" style="width: 30%;" _onclick="fOpenDiv(this);">
+                        <img src="10.png" style="width: 40px;height:40px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);"><br><p style="margin-top: 30px;margin-bottom: 5px;">Compoff</p> 
+    
+                    </td>
+    
+    
+                    <td align="center" class="Apps" id="Attendance" style="width: 30%;" onclick="fOpenDiv(this);">
+                        <img src="Imgs/attend.png" style="width: 40px;height:40px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);"><br><p style="margin-top: 30px;margin-bottom: 5px;">Attendance</p>
+    
+                    </td>
+    
+                    <td align="center" class="Apps" id="Advance" style="width: 30%;" onclick="fOpenDiv(this);">
+                        <img src="Imgs/advance.png" style="width: 40px;height:40px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);"><br><p style="margin-top: 30px;margin-bottom: 5px;">Advance</p>
+    
+                    </td>
+    
+    
+    
+                </tr>
+                <tr>
+                    <td align="center" class="Apps" id="LVList" style="width: 30%;" onclick="fOpenDiv(this);">
+                        <img src="LeaveList.png"
+                            style="width: 40px;height:40px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);"><br><br><p>Leave List</p>
+                    </td>
+    
+    
+                    <td align="center" class="Apps" id="ODList" style="width: 30%;" onclick="fOpenDiv(this);">
+                        <img src="ODList.png"
+                            style="width: 40px;height:40px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);"><br><br><p>OnDuty List</p>
+                    </td>
+    
+    
+                    <td align="center" class="Apps" id="PMList" style="width: 30%;" onclick="fOpenDiv(this);">
+                        <img src="PMList.png"
+                            style="width: 40px;height:40px;position: relative; top:15px;filter: drop-shadow(rgb(73, 73, 73) 2px 2px 4px);"><br><br><p>Permission List</p>
+                    </td>
+    
+                </tr>
+            </div>
+
+        </table>
+    </div>
+    <div _class="GridViewer" id="dApprovals"
+        style="position: absolute;left:10px;top:95px;width: 90%;display:none;z-index:2">
+        <input type="hidden" class="Backs" value="dHome">
+        <div id="ApprovalLists" style="height: 600px;">
+
+        </div>
+    </div>
+
+
+    <div class="Apps" id="dCheckInLists"
+        style="position: absolute;left:20px;top:95px;width: 85%;display:none;z-index:2">
+        <input type="hidden" class="Backs" value="dHome">
+        <div id="CheckINOutList" style="height: 600px;">
+
+        </div>
+    </div>
+
+
+    <div class="Apps" id="dLVList" style="position: absolute;left:20px;top:95px;width: 85%;display:none;z-index:2">
+        <input type="hidden" class="Backs" value="dApplications">
+        <div id="LeaveList" style="height: 600px;">
+        </div>
+    </div>
+
+
+    <div class="Apps" id="dODList" style="position: absolute;left:20px;top:95px;width: 85%;display:none;z-index:2">
+        <input type="hidden" class="Backs" value="dApplications">
+        <div id="OnDutyList" style="height: 600px;">
+
+        </div>
+    </div>
+
+
+    <div class="Apps" id="dPMList" style="position: absolute;left:20px;top:95px;width: 85%;display:none;z-index:2">
+        <input type="hidden" class="Backs" value="dApplications">
+        <div id="PRMList" style="height: 600px;">
+
+        </div>
+    </div>
+
+
+
+
+    <div _class="GridViewer" id="dMaps"
+        style="display:none;position: absolute;left:50px;top:200px;width: 400px;height:500px; z-index:45">
+        <input type="hidden" class="Backs" value="dCheckInLists">
+        <div id="map"></div>
+    </div>
+
+    <div class="Designs" id="dLeave" style="position: absolute;left:20px;top:150px;width: 85%;display:none;z-index:25 ">
+        <input type="hidden" class="Backs" value="dApplications">
+        <div id="TransLeave" _class="MClicks">
+
+        </div>
+    </div>
+
+    <div class="Designs" id="dOnDuty"
+        style="position: absolute;left:20px;top:150px;width: 85%;display:none;z-index:25 ">
+        <input type="hidden" class="Backs" value="dApplications">
+        <div id="TransOD">
+
+        </div>
+    </div>
+
+    <div class="Designs" id="dPermission"
+        style="position: absolute;left:20px;top:150px;width: 85%;display:none;z-index:25 ">
+        <input type="hidden" class="Backs" value="dApplications">
+        <div id="TransPM">
+
+        </div>
+    </div>
+
+    <div class="GridViewer" id="dAttendance"
+        style="position: absolute;left:10px;top:45px;width: 80%;display:none;z-index:25 ">
+        <input type="hidden" class="Backs" value="dApplications">
+        <div id="TransAttend">
+
+        </div>
+    </div>
+
+    <div class="GridViewer" id="dCompoff"
+        style="position: absolute;left:10px;top:45px;width: 80%;display:none;z-index:25 ">
+        <input type="hidden" class="Backs" value="dApplications">
+        <div id="TransCompOff">
+
+        </div>
+    </div>
+
+    <div class="Apps" id="dCalendar" style="position: absolute;left:20px;top:95px;width: 90%;display:none;z-index:25 ">
+        <input type="hidden" class="Backs" value="dApplications">
+        <div id="TransCalendar">
+        </div>
+    </div>
+
+
+    <!--
+    <div class="GridViewer" id="dTransList" style="position: absolute;left:10px;top:45px;width: 80%;display:none;z-index:25 ">
+        <input type="hidden" class="Backs" value="dApplications">
+        <table style="width:100%;">
+            <tr style="height:10%">
+                <td align="center" class="clicks" id="LeaveList" style="width: 50%;" >  
+                    <img src="5.png" style="width: 40px;height:40px;position: relative; top:15px;"><br><br><br>Leave List</td>
+                <td align="center" class="clicks" id="OnDutyList" style="width: 50%;" >
+                    <img src="6.png" style="width: 40px;height:40px;position: relative; top:15px;"><br><br><br>OnDuty List</td>
+            </tr>
+            <tr style="height:10%">
+                <td align="center" class="clicks" id="PMList" style="width: 50%;">  
+                    <img src="7.png" style="width: 40px;height:40px;position: relative; top:15px;"><br><br><br>Permission List</td>
+                <td align="center" class="clicks" id="AttList" style="width: 50%;">
+                    <img src="3.png" style="width: 40px;height:40px;position: relative; top:15px;" ><br><br><br>Attendance List</td>
+            </tr>
+            <tr style="height:10%">
+                <td align="center" class="clicks"  id="CompoffList" style="width: 50%;">  
+                    <img src="10.png" style="width: 40px;height:40px;position: relative; top:15px;" ><br><br><br>Compoff List</td>
+                <td align="center" class="clicks" id="AdvanceList" style="width: 50%;">
+                    <img src="3.png" style="width: 40px;height:40px;position: relative; top:15px;" ><br><br><br>Advance List</td>
+            </tr>
+        </table>
+    </div>
+
+    -->
+
+    <div id="divDate" style="z-index: 45; left:500px; width:200px; height:250px; top:250px; BORDER-RIGHT: thin;
+ BORDER-TOP: thin; DISPLAY: none; BORDER-LEFT: thin; BORDER-BOTTOM: thin; POSITION: absolute;">
+        <label id="lblDate" class="Apps"></label>
+    </div>
+
+    <script lang="javascript">
+
+
+        var apiKey = "AAPK9e9114c2a7a64816af7f2d89ddac3262OAgJnoONNqDw_kFg6s4QNAmMZqb0fPdxHPEoGMtKSlbjY4ZXE_jvcqJahsLtAn0Y";
+
+        var map = L.map('map').setView([11.0574412, 77.2060241], 11);
+        var GMap;
+        function fSatelliteMap() {
+            GMap = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}', {
+                maxZoom: 20,
+                subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+            });
+
+            GMap.addTo(map);
+
+        }
+        fSatelliteMap();
+
+
+        fDataGrid(LeaveList, "DSource", "LeaveListTab", "Leave Lists"); fonlyData(LeaveList);
+        fDataGrid(OnDutyList, "DSource", "ODListTab", "On Duty Lists"); fonlyData(OnDutyList);
+        fDataGrid(PRMList, "DSource", "PMListTab", "Permission Lists"); fonlyData(PRMList);
+
+
+        fFormHeading("Home Screen", "Home.htm");
+
+        function fillEmpHdr(Eid) {
+
+            try {
+                var st = "exec [TransMobile] @Opt=101,@Empid=" + Eid + "";
+                console.log(st);
+                var GT = window.parent.fQry(st).split("!!");
+                GHeader = GT[0].split("~");
+                GSP = GT[1].split("~");
+
+                lEmps.innerHTML = fGetColVal("EmpDetails");
+            }
+            catch (e) {
+            }
+        }
+
+        fillEmpHdr(window.parent.parent.GEmpid);
+
+        var prvObj = dHome;
+        var oldObj = null;
+
+        function fOpenDiv(Obj) {
+            var Eid = window.parent.parent.GEmpid;
+
+            if (prvObj)
+                prvObj.style.display = "none";
+            var dObj = document.getElementById("d" + Obj.id);
+
+
+            dObj.style.display = "";
+
+            oldObj = document.getElementById(dObj.querySelector(".Backs").value);           //  prvObj;  // Old Object Example Home
+            prvObj = dObj;    //  Example dApplicaltions
+
+            // prvObj=dObj;
+            sEmployee.style.display = "none";
+
+            TransLeave.innerHTML = "";
+            TransOD.innerHTML = "";
+            TransPM.innerHTML = "";
+            TransAttend.innerHTML = "";
+            TransCompOff.innerHTML = "";
+
+            //       vnjil;po,i(Obj.id);
+
+            switch (Obj.id) {
+                case "Leave": sEmployee.style.display = ""; fillEmpHdr(Eid); fTrans(TransLeave, 5); break;
+                case "OnDuty": sEmployee.style.display = ""; fillEmpHdr(Eid); fTrans(TransOD, 6);
+                    fHourCombo(STimeFrmHr, "Hour");
+                    fHourCombo(STimeToHr, "Hour");
+                    fMinuteCombo(STimeFrmMn, "Minute");
+                    fMinuteCombo(STimeToMn, "Minute");
+
+
+                    break;
+
+                case "Permission": sEmployee.style.display = ""; fillEmpHdr(Eid); fTrans(TransPM, 7);
+                    //if (window.parent.Dates != "") {
+                    //      tDOF.value = window.parent.Dates;
+                    //}
+
+                    fHourCombo(STimeFrmHr, "Hour");
+                    fHourCombo(STimeToHr, "Hour");
+                    fMinuteCombo(STimeFrmMn, "Minute");
+                    fMinuteCombo(STimeToMn, "Minute");
+
+
+                    break;
+                case "Attendance": sEmployee.style.display = ""; fillEmpHdr(Eid); fTrans(TransAttend, 3); break;
+                case "Compoff": sEmployee.style.display = ""; fillEmpHdr(Eid); fTrans(TransCompOff, 10); break;
+                case "Calendar": fillEmpHdr(Eid); fMyCalendar(); break;
+                case "CheckInLists": sEmployee.style.display = ""; fCheckInList(CheckINOutList, 0); break;
+                case "Approvals": dApprovals.style.display = ""; fLoadPendingApproves(); break;
+                case "Maps": sEmployee.style.display = ""; break;
+
+                case "LVList": sEmployee.style.display = ""; fillEmpHdr(Eid); fLeaveList(); break;
+                case "ODList": sEmployee.style.display = ""; fillEmpHdr(Eid); fODList(); break;
+                case "PMList": sEmployee.style.display = ""; fillEmpHdr(Eid); fPMList(); break;
+
+
+
+            }
+            if (sEmployee.style.display == "") {
+                var Tops = parseInt(sEmployee.style.top) + parseInt(sEmployee.style.height) + 2;
+
+                dObj.style.top = Tops + "px";
+            }
+
+            fFormHeading("<img src='Home.png' style='width: 20px;height:20px;display:none;'><img src='Back.png' style='width: 20px;height:20px;cursor:pointer;' onclick='fBack(this);'>&nbsp;&nbsp;" + Obj.id + "", "Home.htm");
+
+
+        }
+        function fBack(Obj) {
+            var s = oldObj.id.substring(1, oldObj.id.length);
+            var cObj = document.getElementById(s);
+            fOpenDiv(cObj);
+        }
+
+        function fTrans(ResultDiv, TransType) {
+            ResultDiv.innerHTML = fLoadTransactionMobile(TransType);
+        }
+
+
+        var DF = "01-05-2024";
+        var DT = "31-05-2024";
+
+        function fMyCalendar() {
+            //    var Obj=dMyCalendar;
+            var st = "exec [MyMobileApp] @Opt=4, @Userid=" + window.parent.parent.GUserid + ",@Empid=" + window.parent.parent.GEmpid + ",@DF='" + fymd(DF) + "',@DT='" + fymd(DT) + "'";
+
+            console.log(st);
+            Reload = 0;
+            var GT = window.parent.fQry(st).split("!!");
+            TransCalendar.innerHTML = BuildMonthlyCalendar(fgetYear(DF), fgetMonth(DF), GT);
+
+        }
+
+
+        var apiKey = "AAPK9e9114c2a7a64816af7f2d89ddac3262OAgJnoONNqDw_kFg6s4QNAmMZqb0fPdxHPEoGMtKSlbjY4ZXE_jvcqJahsLtAn0Y";
+
+
+
+        function fOpenMap(Latts, Longs, Accry) {
+            var mywindow = window.open("GMaps.htm?LT=" + Latts + "&LG=" + Longs + "&AC=" + Accry + "", "mywindow", "menubar=0,resizable=1,scrollbars=1,width=400,height=400,top=100,left=50");
+            //  fOpenDiv(Maps);
+
+
+            //var map = L.map('map').setView([Latts,Longs], Accry);
+
+        }
+        function fCheckOutLoc() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, 2);
+            }
+            else {
+
+                alert("Geolocation is not supported by this browser.");
+
+            }
+
+        }
+        var Ctype = 1;
+
+        function fCheckInLoc() {
+
+            Ctype = 1;
+            fLoc();
+        }
+
+        function fCheckOutLoc() {
+
+            Ctype = 2;
+            fLoc();
+        }
+
+        function fLoc() {
+            if (navigator.geolocation) {
+
+
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            else {
+
+                alert("Geolocation is not supported by this browser.");
+
+            }
+
+        }
+
+        function fLoadPendingApproves() {
+
+            fDataGrid(ApprovalLists, "DSource", "dApprLists", "Pending Lists"); //fonlyData(dSource);
+
+            var Qry = "exec [TransRemains_Mobile] @Opt=3,@USerid=" + window.parent.parent.GUserid + "";
+            var GT5 = window.parent.fQry(Qry);
+            fGrid(GT5, dApprLists, "", 0, 50);
+
+        }
+
+
+        var GMode = ""
+
+        function fOpenDetails(G, IDDs, Eid) {
+            IDD = IDDs;
+
+            fillEmpHdr(Eid);
+            Empid = Eid;
+
+
+            switch (G) {
+
+                case 5: fOpenDiv(Leave); fTrans(TransLeave, G); break;
+                case 6: fOpenDiv(OnDuty); alert(1);
+
+                    fTrans(TransOD, G);
+
+
+
+
+                    break;
+                case 7: fTrans(TransPM, G); break;
+
+
+            }
+            fCommonMobile(G, Eid, window.parent.parent.GUserid, IDD, "Approve");
+
+            console.log("Mode :" + Mode);
+
+            //        Mode=GMode;
+
+            switch (G) {
+                case 5: fGetLeaveDetails(Eid, IDD); break;
+
+                case 6: fgetONDutyDetails(Eid, IDD); break;
+                case 7: fgetPMDetails(Eid, IDD); break;
+
+
+            }
+            fHideButtons();
+            fButtons();
+
+            console.log("Completed:" + CompletedLevel);
+            console.log("UserLevel:" + UserLevel);
+            console.log(" isFinalLevel   :" + isFinalLevel);
+            console.log("UserType:" + UserType);
+            console.log("Mode:" + Mode);
+
+
+        }
+
+        function fHideButtons() {
+
+            bApply.style.display = "none";
+            bForward.style.display = "none";
+            bApprove.style.display = "none";
+            bReject.style.display = "none";
+
+        }
+        function fButtons() {
+
+            switch (Mode) {
+                case "Apply": bApply.style.display = ""; break;
+                case "Forward": bForward.style.display = ""; bReject.style.display = ""; ApproverRM.style.display = ""; break;
+                case "Approve": bApprove.style.display = ""; bReject.style.display = ""; ApproverRM.style.display = ""; break;
+
+            }
+
+
+        }
+        function fCheckInList(Obj, val) {
+
+            fDataGrid(CheckINOutList, "DSource", "dCheckList", "Check In Lists"); //fonlyData(dSource);
+
+            var Qry = "exec [SaveLocations] @Opt=3";
+            var GT5 = window.parent.fQry(Qry);
+            fGrid(GT5, dCheckList, "", 0, 50);
+
+
+        }
+
+        function fLeaveList() {
+
+            var Qry = "exec [TransRemains_Mobile] @Opt=11,@Empid=" + window.parent.parent.GEmpid + ", @USerid=" + window.parent.parent.GUserid + ",@DF='" + fymd(DF) + "',@DT='" + fymd(DT) + "'";
+            var GT5 = window.parent.fQry(Qry);
+            fGrid(GT5, LeaveListTab, "", 0, 50);
+
+            var O = LeaveListTab.querySelector(".DGridTable");
+            O.rows[1].style.display = "none";
+
+
+        }
+
+        function fODList() {
+            var Qry = "exec [TransRemains_Mobile] @Opt=12,@Empid=" + window.parent.parent.GEmpid + ", @USerid=" + window.parent.parent.GUserid + ",@DF='" + fymd(DF) + "',@DT='" + fymd(DT) + "'";
+            var GT5 = window.parent.fQry(Qry);
+            fGrid(GT5, ODListTab, "", 0, 50);
+            var O = ODListTab.querySelector(".DGridTable");
+            O.rows[1].style.display = "none";
+
+        }
+
+        function fPMList() {
+            var Qry = "exec [TransRemains_Mobile] @Opt=13,@Empid=" + window.parent.parent.GEmpid + ", @USerid=" + window.parent.parent.GUserid + ",@DF='" + fymd(DF) + "',@DT='" + fymd(DT) + "'";
+            var GT5 = window.parent.fQry(Qry);
+            fGrid(GT5, PMListTab, "", 0, 50);
+            var O = PMListTab.querySelector(".DGridTable");
+            O.rows[1].style.display = "none";
+
+        }
+
+
+        //var marker=L.marker([11.088036192053982, 77.21897363662721]).addTo(map);
+        var marker, circle;
+
+
+
+        function showPosition(position) {
+
+            var lt = position.coords.latitude;
+            var ln = position.coords.longitude;
+
+            var accuracy = position.coords.accuracy;
+
+            var s = L.latLng(lt, ln);
+
+            L.esri.Geocoding.reverseGeocode({
+                apikey: apiKey
+            }).latlng(s).run(function (error, result) {
+
+                var sp = fSplitR(result.address.Match_addr);
+
+                console.log(sp);
+
+                var Addr = [, " ", " ", " ", " ", " ", " "];
+
+
+
+                if (typeof sp[0] != "undefined")
+                    Addr[0] = sp[0];
+                if (typeof sp[1] != "undefined")
+                    Addr[1] = sp[1];
+                if (typeof sp[2] != "undefined")
+                    Addr[2] = sp[2];
+                if (typeof sp[3] != "undefined")
+                    Addr[3] = sp[3];
+                if (typeof sp[4] != "undefined")
+                    Addr[4] = sp[4];
+
+                //  +"@DOT='"+ fymd(lLocDate.innerText) + " " + lTime.innerText +"',"
+
+                var st = "exec SaveLocations @Opt=2, @Empid=" + window.parent.parent.GEmpid + ","
+                    + "@Latt='" + lt + "',@Long='" + ln + "',"
+                    + "@Accur='" + accuracy + "',"
+                    + "@TStamp='',"
+                    + "@addr1='" + Addr[0] + "',"
+                    + "@addr2='" + Addr[1] + "',"
+                    + "@addr3='" + Addr[2] + "',"
+                    + "@addr4='" + Addr[3] + "',"
+                    + "@addr5='" + Addr[4] + "',"
+                    + "@Comments='CheckIN',@Ctype=" + Ctype + ",@Userid=" + window.parent.parent.GUserid + "";
+
+                var res = window.parent.fSaveCmd(st);
+                alert(res);
+
+
+
+            });
+
+
+            // sLate.innerHTML =   position.coords.latitude; 
+            //sLong.innerHTML=   position.coords.longitude;
+            //var accuracy = position.coords.accuracy;
+            //saccuracy.innerHTML=accuracy;
+            //sTime.innerHTML= lLocDate.innerText + " " + lTime.innerText;
+            //console.log(position);
+
+
+        }
+
+
+
+        function fSplitR(result) {
+
+            var sp = result.split(",");
+
+            return sp;
+
+        }
+        
+
+
+
+
+
+
+
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <input type=hidden id=hStatus name=hStatus value="0" />
+
+
+</body>

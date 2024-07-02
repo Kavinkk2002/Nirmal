@@ -1,0 +1,2867 @@
+
+tr .tdMas td
+{
+	BACKGROUND-IMAGE: url(iPack/OrHH.PNG); BACKGROUND-REPEAT: repeat-x;cursor:hand;
+}
+
+.tdMas
+{
+	BACKGROUND-IMAGE: url(iPack/OrHH.PNG); BACKGROUND-REPEAT: repeat-x;cursor:hand;
+}
+
+
+
+.tdback
+{
+		background-color:#d2d3d3;
+}
+
+
+
+.GLight
+{    background-color: #f0f0f0;
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #f0f0f0), color-stop(1.0, #ededed ));
+ font-size: 10px;
+ color: #000000;
+}
+.GMid
+{
+background-color:#eaf2df;
+}
+
+
+tr .GDark td
+{
+    top: expression(this.offsetParent.scrollTop);
+    position: sticky;
+    top: 0;
+    cursor: hand;
+     color: #E6E6E6;
+    height: 25px;
+    background-color: #067339;
+   
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #b4c9d0), color-stop(1.0, #b4c9d0 ));
+     background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #1a627d), color-stop(1.0, #1a627d )); 
+     font-size: 10px;
+}
+
+
+.GDark
+{   position: sticky;
+    top: 0;
+    left:0;
+    border: 0px solid #FF9900;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #003300; 
+    height: 25px;
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #b4c9d0), color-stop(1.0, #8dabb6 ));
+  
+    font-size: 11px;
+}
+
+.tdWhtBld{
+
+    
+	font-weight:bold;
+    padding: 5px;
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #e4e4e4), color-stop(1.0,#e4e4e4));
+
+
+}
+
+
+
+
+.GDarks
+{
+	position:relative; top:expression(this.offsetParent.scrollTop);background-color:#c5e39d;font-weight:bold;
+
+  
+    border: 0px solid #FF9900;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #E6E6E6;
+    height: 25px;
+    
+     background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #66858f), color-stop(1.0, #4d707c ));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #6697a9), color-stop(1.0, #1a627d ));
+  
+    font-size: 11px;
+
+}
+
+
+
+Hdr
+{
+	BACKGROUND-IMAGE: url(iPack/OrHH.PNG); BACKGROUND-REPEAT: repeat;font-weight:bold;color:Black;top:expression(this.offsetParent.scrollTop);position:relative;
+}
+.bHdr
+{
+	BACKGROUND-IMAGE: url(iPack/BlueH.PNG); BACKGROUND-REPEAT: repeat;font-weight:bold;color:white;font-size:8px;
+}
+.dHdr
+{
+	BACKGROUND-IMAGE: url(iPack/darkBlue.PNG); BACKGROUND-REPEAT: repeat;font-weight:bold;color:white;font-size:8px;
+}
+
+
+
+
+
+.tdBlueList
+{
+	 background-color:White;cursor:hand; color:Maroon;font-size:14px; width:70%;
+}
+.GLightApp {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height:24px;
+    background-color: #ffdb4d;
+    border: 1px solid #CACACA;
+    color: #003300; 
+    font-family:Caviar Dreams;
+    padding: 5px 9px;font-size: 0.8em; 
+    font-weight: bold;
+    width: 70%; 
+}
+
+
+.fntcls 
+{
+    color:#006600; font-family:Caviar Dreams;
+    font-size: 1em;
+}
+
+.fntcls2
+{
+    color:#006600; font-family:Caviar Dreams;
+    font-size: 1em;
+}
+
+
+
+.tblcls
+{
+	background-color:LightGrey;
+}
+
+tr.RowSel td
+{
+	background-color:#d8d5d8;
+}
+
+RowSel
+{
+	background-color:ThreeDFace;
+}
+
+.tdgraynew
+{	
+	 -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height:12px;
+    background-color: #cdcdcd;
+    border: 1px solid #CACACA;
+    color: black;
+    font-size: 1.3em;font-family:Caviar Dreams;
+    padding: 5px 9px;
+    width: 180px; vertical-align:middle;
+}
+
+
+
+
+.tdWhiteList {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height:24px;
+    background-color: White;
+    border: 1px solid green;
+    color: #444;
+    padding: 5px 9px;
+    width: 70%;
+}
+
+
+.btn7New
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 24px;
+    background-color: #FF7575;
+    border: 1px solid #CACACA;
+    color: #ffff00;
+    font-size: 1em;
+    font-family: Caviar Dreams;
+    padding: 5px 9px;
+    width: 120px;
+    vertical-align: middle;
+}
+
+
+.btn5New
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 23px;
+    background-color: #DFDFDF;
+    border: 2px dotted #CCCCCC;
+    color: #000066;
+    font-size: 1em;
+    font-family: Caviar Dreams;
+    padding: 5px 9px;
+    width: 72px;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+
+  .PG { width: 100vw; height: 100vh}
+  .pages {
+    min-height: 100%;
+    width: 100%;
+  }
+
+  
+.page {
+    width: 29.7cm;
+    min-height: 21cm;
+    padding: 0.5cm;
+    margin: 1cm auto;
+    border: 1px #979e9d solid;
+    border-radius: 1px;
+    background: rgba(219, 216, 178, 0.226);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  
+  }
+
+  .GridViewer {
+    width: 41.7cm;
+    min-height: 21cm;
+    padding: 0.5cm;
+    margin: 0.3cm auto;
+    border: 1px #979e9d solid;
+    border-radius: 1px;
+    background: rgba(185, 212, 209, 0.226);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  
+  }
+
+.RViewer{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+      z-index: 5;
+       position: absolute;
+       left:10%;width:70%;height:98%;
+      top:1%; border: 0px solid #666666;
+      background-color:rgb(82, 100, 94);
+
+}
+
+
+.DeskTop{
+
+    position: absolute;
+    top:1px;
+    width:85%;
+    left:191;
+     
+    height:95%;
+    border: 1px #c0c7c6 solid;
+    border-radius: 1px;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #e4e4e4), color-stop(1.0,#e4e4e4));
+    
+    background1: rgba(185, 212, 209, 0.226);
+    background1: rgba(185, 212, 209, 0.226);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.MyCal{
+    border: 1px solid #787878;  
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #1DE3CB), color-stop(1.0, #15B4A0));
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #F1C40F), color-stop(1.0, #D4AC0D));
+}
+
+.MyTeam{
+    border: 1px solid #787878;  
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #F1C40F), color-stop(1.0, #D4AC0D));
+
+}
+
+
+.MyApproves{
+    border: 1px solid #787878;  
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #EC7063), color-stop(1.0, #CB4335));
+     
+    color:white;
+}
+
+.MyApprList{
+    border: 1px solid #787878; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #7FB3D5), color-stop(1.0, #5499C7));
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #F1C40F), color-stop(1.0, #D4AC0D));
+}
+
+
+
+
+.MyApproved{
+    border: 1px solid #787878; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #D4AC0D), color-stop(1.0, #B7950B));
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #F1C40F), color-stop(1.0, #D4AC0D));
+
+}
+.Trans{
+    border: 1px solid #787878; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #AAB7B8), color-stop(1.0, #717D7E));
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #F1C40F), color-stop(1.0, #D4AC0D));
+}
+
+.Back{
+    border: 1px solid #787878; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding:15px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #3498DB), color-stop(1.0, #3498DB));
+}
+
+.Front{
+    border: 1px solid #787878; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding:15px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #DC7633), color-stop(1.0, #D35400));
+}
+
+
+.Permission
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #FF9999;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #f57f7f), color-stop(1.0, #FF9999));
+}
+
+.PM{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #FF9999;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #f57f7f), color-stop(1.0, #FF9999));
+    border: 1px solid #787878;  
+
+}
+
+.OnDuty
+{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #0099FF;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #64d2da), color-stop(1.0, #64d2da));
+    border: 1px solid #787878;  
+}
+
+.Resign{
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #FF9999;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #adaf28), color-stop(1.0, #adaf28));  
+    border: 1px solid #787878;  
+}
+.Resignation{
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #FF9999;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #adaf28), color-stop(1.0, #adaf28));   
+    border: 1px solid #787878;  
+}
+
+
+.Rejoin{
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #FF9999;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #adaf28), color-stop(1.0, #adaf28));  
+    border: 1px solid #787878;  
+}
+
+
+.Manual
+{
+    background-color: #6666FF;
+}
+
+.Profile
+{
+    border: 1px solid #787878;  
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #33CC33;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #33CC33), color-stop(1.0, #33CC33));   
+   
+}
+
+
+.Pendings{
+    border: 1px solid #787878;  
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #33CC33;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #AED6F1), color-stop(1.0, #85C1E9));   
+
+}
+
+
+
+.HODS{
+    border: 1px solid #787878;  
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #33CC33;
+     text-decoration: underline;
+   
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #F1C40F), color-stop(1.0, #D4AC0D));
+}
+
+.Clicks1{
+
+    border: 0px solid #787878;  
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+   padding:5px;
+
+}
+
+
+.ReqNo {
+
+     border: 1px solid #787878;  
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+   padding:5px;  
+}
+
+
+td
+{
+    _border-style: none none solid solid;
+    border-width: 1pt;
+    border-color: #5A5A5A;
+    font-size: 12px;
+    color: #626262;
+    font-family: verdana;
+}
+
+input[type=text]
+{
+    border: 1px solid #414141;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    height: 22px;
+    background-color: #b4c9d0;
+    color: #2D2D2D;
+    font-size: 12px;
+}
+
+.Number1
+{
+      border: 0px solid #666666;
+      width:100%;
+      height:100%;
+      text-align:right;
+}
+
+input[type=button]
+{
+    border: 1px solid #606060;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    height: 25px;
+  
+    
+     background-color: #04AA6D;
+    background-color: #71B8FF;
+    background: -moz-linear-gradient(top, #71B8FF, #3399FF);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #5499C7), color-stop(1.0, #5499C7));
+    cursor: pointer;
+   color: #F2F3F4;
+    font-size: 10px;
+}
+
+.Month{
+    border: 1px solid white;
+    color: rgb(22, 16, 16);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #E5E8E8), color-stop(1.0, #AEB6BF));
+}
+
+.year{
+    border: 1px solid white;
+    color: white;
+    width: 200px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #5D6D7E), color-stop(1.0, #2E4053));
+}
+
+Select
+{
+    border: 1px solid #666666;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 22px;
+    background-color: #b4c9d0;
+   color: #2D2D2D;
+    font-size: 12px;
+   
+}
+
+.Pass
+{
+    border: 1px solid #606060;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 22px;
+    background-color: #b3cee4;
+    color: #CC3300;
+    font-size: 10px;
+}
+
+
+.tArea
+{
+    border: 1px solid #606060;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    background-color: #c1d7a9;
+    color: #392f2f;
+    font-size: 11px;
+    padding: 3px 3px;
+}
+
+
+.tFlters
+{
+       background-color: #b4c9d0;
+   -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 90%;
+    height:30px;
+    
+}
+
+.tSearches
+{
+    border: 1px solid #8C8C8C;
+    background-color: #8FAEBA;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.tdLine
+{
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #348096), color-stop(1.0, #01607c));
+}
+
+
+.HeaderAll
+{
+    cursor: hand;
+    color: #E6E6E6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-image1: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-image1: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-image1: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    background-image: url('Design/clouds.jpg');
+    height: 90%;
+    width: 90%;
+    background-repeat: no-repeat;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #2071b0), color-stop(1.0, #006cad));
+}
+
+
+.MHeaderAll
+{
+    cursor: hand;
+    color: #E6E6E6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    background-image: url('Design/clouds.jpg');
+    height: 90%;
+    width: 90%;
+    background-repeat: no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #D5DBDB), color-stop(1.0, #D5DBDB));
+}
+
+
+
+
+.MClicks{
+
+    cursor:hand;
+    border: 0px solid #707B7C;  
+    -moz-border-radius: 80px;
+    -webkit-border-radius: 120px;
+    padding:2px;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #5499C7), color-stop(1.0,#1F618D));
+    
+    background2: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #348096), color-stop(1.0, #01607c));
+    
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #5D6D7E), color-stop(1.0,  #2E4053));
+    cursor: pointer;
+    font-size: 10px;
+    color:#FBFCFC;
+    text-decoration: underline;
+   
+
+}
+
+.MobiHeading{
+
+    font-family: Arial (sans-serif); color:#eb250f;font-size:15px; 
+}
+
+tr .Apps td
+{
+   
+    color:#FBFCFC; 
+}
+
+.PContent{
+  
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #EAEDED), color-stop(1.0,  #D5DBDB));
+    
+    color:#FBFCFC; 
+}
+.WButton{
+
+
+}
+.Apps{
+    cursor:hand;
+    border: 1px solid #787878;  
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    padding:2px;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #5499C7), color-stop(1.0,#1F618D));
+    
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0,  #16A085), color-stop(1.0,  #117A65));
+    background2: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #348096), color-stop(1.0, #01607c));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0,#82afdb ), color-stop(1.0,  #6c9fdd));
+    cursor: pointer;
+    font-size: 10px;
+    color:#FBFCFC; 
+   
+}
+
+.Designs{
+    cursor:hand;
+    border: 1px solid #787878;  
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding:2px;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #5499C7), color-stop(1.0,#1F618D));
+    
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0,  #16A085), color-stop(1.0,  #117A65));
+    background2: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #348096), color-stop(1.0, #01607c));
+  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #566573), color-stop(1.0,  #566573));
+    cursor: pointer;
+    font-size: 10px;
+    color:#FBFCFC; 
+   
+}
+
+
+.gHeader
+{
+    border-style: none;
+    color: #666666;
+    font-size: 15px;
+}    
+
+
+
+.Header
+{
+    cursor: hand;
+    color: #E6E6E6;
+    font-size: 10px;    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 20px;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #348096), color-stop(1.0, #01607c));
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #5D6D7E), color-stop(1.0,  #2E4053));
+  
+}
+
+.tdUser
+{
+    color: #333300;
+    cursor: hand;
+    font-size: 10px;    
+    font-style:italic;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #e6d500;
+    background: -moz-linear-gradient(top, #e6d500, #ff8a3d);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #E5E8E8), color-stop(1.0, #D5DBDB));
+    border: 0px solid #666666;
+   
+}
+
+
+
+.DBlue
+{
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: Black;
+    background-color: #9797FF;
+    background: -moz-linear-gradient(top, #4FA7FF, #3399FF);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #4FA7FF), color-stop(1.0, #3399FF));
+    
+}
+
+
+
+
+.DB{
+
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    color: #FCFCFC;
+    border: 1px solid #C1D6A0;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #f0f0f0), color-stop(1.0, #ededed ));
+
+       
+
+}
+
+
+
+.Users{
+
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    color: #140202;
+    border: 1px solid #C1D6A0;
+    font-size: :10px;;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    left:80%;top:5%; height:60%;width:20%;
+    position: absolute;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #f0f0f0), color-stop(1.0, #ededed ));
+
+       
+
+}
+.UserSettings{
+
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    color: #FCFCFC;
+    border: 1px solid #C1D6A0;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    left:80%;top:5%; height:60%;width:20%;
+    position: absolute;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #f0f0f0), color-stop(1.0, #ededed ));  
+}
+
+.FooterAll
+{
+        cursor: hand;
+    color: #E6E6E6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-image: url('Design/Footer.png');
+    background-repeat: repeat;
+}
+
+.LoginPanel
+{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    color: #FFFFFF;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #366e81), color-stop(1.0, #366e81));
+    background-color: #CCCCCC;
+     box-shadow: 0 40px 40px 0 rgba(0, 2, 0, 0.5), 0 40px 40px 0 rgba(0, 0, 0, 0.25);
+}
+
+.LoginBox{
+
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: #787878;
+} 
+.TabLog
+{
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-color: #787878;
+    font-size: 10px;
+    height: 20px;
+    width: 100px;
+    color: #FFFFFF;
+    font-style: italic;
+}
+
+.MFilters
+{
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #6892a0), color-stop(1.0, #6892a0));
+    background-color: #008000;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.PRDS
+{
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    color: #FCFCFC;
+    border: 1px solid #015670;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #015670), color-stop(1.0, #015670));
+   
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);  
+       
+
+
+
+}
+
+
+.Login1
+{
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    color: #FCFCFC;
+    border: 0px solid #C1D6A0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #015670), color-stop(1.0, #015670));
+    background-color: #008000;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);  
+       left:30%;top:40%; height:30%;width:30%;
+
+
+
+}
+
+
+.LoginButton
+{
+  background-color1: #17a1e0;
+  
+  background:1 -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #17a1e0), color-stop(1.0, #17a1e0));
+  
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #1ABC9C), color-stop(1.0,  #17A589));
+  color: white;
+  padding: 7px 7px;
+  
+  -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  cursor:pointer;
+}
+
+
+.CheckIn
+{
+  background-color: #17a1e0;
+  
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #17a1e0), color-stop(1.0, #17a1e0));
+  color: white;
+  padding: 10px 10px;
+  
+  -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  cursor:pointer;
+}
+
+
+.CheckOut{
+
+    background-color: #DC7633;
+  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #DC7633), color-stop(1.0, #DC7633));
+    color: white;
+    padding: 10px 10px;
+    
+    -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    cursor:pointer;
+
+}
+
+.LoginConditions
+{
+    
+  
+    padding: 10px 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    cursor: pointer;
+       background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #e6d500), color-stop(1.0, #ccbe00));
+ 
+}
+
+
+
+
+.tdgry
+{
+    background-color: #232323;
+    color: White;
+}
+
+
+.HRS
+{
+     color: #FCFCFC;
+    border: 1px solid #6A6A6A;
+    height: 98%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+    right: 0px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #8BB854;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #EAEDED), color-stop(1.0, #D5DBDB));
+      box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.BoxHead
+{
+    cursor: hand;
+    color: #EBEBEB;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    height: 20px;
+}
+
+
+
+
+.BoxHeading
+{
+  color: #F5F5F5;
+}
+
+.GridBack
+{
+    margin: 0px;
+    color: #EBEBEB;
+    cursor: hand;
+    font-size: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+   
+    
+    padding: 4px 4px;
+    text-align: center;
+    vertical-align: middle;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #f0f0f0), color-stop(1.0, #ececec));
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #e5e8e8af), color-stop(1.0, #e5e8e87e ));
+   
+}
+
+.Background
+{
+    background-image: url('Design/B.png');
+    background-repeat: no-repeat;
+}
+    
+.dropbtn
+{
+    background-color: #026440;
+      border: 0px solid #fb8c3f;
+    background: -moz-linear-gradient(top, #BBBBBB, #E4E4E4);
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #1d5d72), color-stop(1.0, #1d5d72));
+     box-shadow1: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    padding: 6px 6px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 10px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+
+
+.dropdown {     position: relative;     display: inline-block;  }
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    color: #666666;
+    min-width: 200px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: White;
+    border: 1px solid #FF9900;
+    z-index: 1;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #1d5d72), color-stop(1.0, #1d5d72));
+     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropdown-content td
+{
+      color:White;
+    text-align: left;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+ .dropdown-content td:hover  
+{
+    background-color: #FF9966; color:Black; background: -moz-linear-gradient(top, #FFBE9F, #FF9966);    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FFBE9F), color-stop(1.0, #FF9966));  
+}
+
+
+ .dropdown-content label:hover
+{
+    background-color: #37B7C3; color:Black;  
+}
+
+
+
+
+.dropdown:hover .dropdown-content {display: block; }
+
+.dropdown:hover .dropbtn { BACKGROUND-IMAGE: url('tabs/BlueDark.png');     color:white; background-repeat: repeat;     cursor:pointer; }
+
+
+
+
+.dropdown-content a:hover  
+{
+     background-color: #FF9966; color:Black;
+    background: -moz-linear-gradient(top, #FFBE9F, #FF9966);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FFBE9F), color-stop(1.0, #FF9966));
+    
+    }
+
+
+.dropdown-content a {
+  color: #C1D6A0;
+  text-align:left;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.DGridTableBlack
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor: hand;
+    color: #FFFFFF;
+     font-family: Calibri;
+}
+.DCalendarHead{
+    color: #FFFFFF;
+    
+
+}
+
+.DGridTable
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor: hand;
+    color: #FFFFFF;
+    font-family: Calibri;
+}
+
+
+.PageCombo
+{
+    border-style: none;
+    width: 40px;
+    font-size: 8px;
+}
+
+
+
+
+DSelected
+{
+     color: #E6E6E6;
+    height: 25px;
+    background-color: #067339;
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #1a627d), color-stop(1.0, #1a627d ));
+     font-size: 10px;
+}
+
+
+tr .DSelected td
+{
+     color: #E6E6E6;
+    height: 25px;
+    background-color: #067339;
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #1a627d), color-stop(1.0, #1a627d ));
+     font-size: 10px;
+}
+
+
+
+tr .DFldHead td
+{
+    top: expression(this.offsetParent.scrollTop);
+    position: sticky;
+    top: 0;
+    cursor: hand;
+    color:#FBFCFC; 
+    height: 25px;
+     font-size: 10px;
+}
+
+
+.DFldHead
+{
+    top1: expression(this.offsetParent.scrollTop);
+    position: sticky;
+    top: 0;
+    left:0;
+    border: 0px solid #FF9900;
+    color:#FBFCFC; 
+    height: 25px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 11px;
+}
+
+
+
+.vh  {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: left;
+    max-height: 150px;
+  }
+
+
+
+.Outer
+{
+    border: 2px solid #818181;
+    height: 98%;
+    
+    color: #FFFFFF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #c1d7a9;
+    background: -moz-linear-gradient(left, #EFEFEF, #EFEFEF);
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #d1e1bf), color-stop(1.0, #c1d7a9));
+        box-shadow1: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+
+    background: rgba(237, 245, 244, 0.226);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.vTabs
+{
+
+    position: sticky;
+    top: 0;
+    left:0;
+    border: 0px solid #FF9900;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #FFFFFF;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #6ea1b4), color-stop(1.0, #1a627d ));
+  
+}
+
+tr.DContent td
+{
+    background-color1: #f0f0f0;
+       background2: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #f0f0f0), color-stop(1.0, #ededed ));
+       background3: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #AEB6BF), color-stop(1.0,  #AEB6BF));
+       
+       background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #5D6D7E), color-stop(1.0,  #5D6D7E));
+    
+
+       font-size: 10px;
+       color:#FBFCFC; 
+    }
+
+.DContent
+{
+     background-color: #d8d8d8;
+   color:#FBFCFC;
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #5D6D7E), color-stop(1.0,  #5D6D7E));
+     
+   background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #AEB6BF), color-stop(1.0,  #AEB6BF));
+    
+     background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ededed), color-stop(1.0, #ededed ));
+  font-size: 10px;
+}
+
+.MContent{
+    color: #FFFFFF;
+
+}
+.tdWhite{
+    background-color: #d8d8d8;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ededed), color-stop(1.0, #ededed ));
+    font-size: 10px;
+      color: #000000;
+
+}
+
+.SubTab
+{
+    background-color: #C5C5C5;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #C5C5C5), color-stop(1.0, #C5C5C5));
+    color: #000000;
+}
+
+
+
+
+
+.DContentText
+{
+    border-style: none;
+    background-color: #525252;
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+    color: #333333;
+}
+
+.DTotal
+{
+    background-color: #d1e1bf;
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+
+
+.SourceHead
+{
+    border: 1px solid #808080;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #333333;
+    height: 20px;
+    font-weight: bold;
+    background-color: #D2E0E6;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #D2E0E6), color-stop(1.0, #b3cbd4));
+    font-size: 10px;
+}
+
+
+.SourceHeadOrange
+{
+    background-color: #FFCC00;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: -moz-linear-gradient(top, #92FF24, #FFCC00);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #92FF24), color-stop(1.0, #FFCC00));
+    color: #333333;
+    height: 20px;
+}
+
+
+.DColumnSelect
+{
+    border-style: none dotted none dotted;
+    border-width: thin;
+    border-color: #FF9900;
+}
+
+
+
+
+
+
+.DropBox
+{
+    
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #272727;
+    background: -moz-linear-gradient(top, #272727, #272727);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #272727), color-stop(1.0, #272727));
+    border: 1px solid #787878;
+    cursor: pointer;
+    overflow: auto;
+    position: absolute;
+    color: #C1D6A0;
+  
+}
+
+
+.ContextBox
+{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #939393;
+    background: -moz-linear-gradient(top, #939393, #939393);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #939393), color-stop(1.0, #939393));
+    border: 1px solid #787878;
+    cursor: pointer;
+    overflow: auto;
+    position: absolute;
+    color: #FFFFFF;
+
+}
+
+
+
+
+.tr
+{
+    background-color: #d1e1bf;
+    color: #333333;
+}
+
+tr.DSelect td
+{
+    background-color: #FF9900;
+    color: #333333;
+}   
+
+.DSelect
+{
+    background-color: #da9021;
+    color: #333333;
+}
+
+.iSelect
+{
+    background-color: #FFB693;
+    color: #333333;
+}
+.tdbackg{
+   border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: #787878;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #E5E8E8), color-stop(1.0, #D5DBDB));
+
+  font-size: 10px;
+   height: 20px;
+  color: #130707;
+    cursor:pointer;
+    width:100px; 
+}
+.Tabselect
+{
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: #787878;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #E5E8E8), color-stop(1.0, #D5DBDB));
+
+  font-size: 10px;
+   height: 20px;
+  color: #130707;
+    cursor:pointer;
+    width:100px;
+}
+
+.Tabselect:hover
+{
+    height: 20px;
+    color: #000000;
+    cursor: pointer;
+       font-size: 10px;
+       width:120px;
+}
+          
+
+.tdbackgg{
+
+    border-style: solid;
+    border-width: 2px 2px 0px 2px;
+    border-color: #666666;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    color: #333300;
+    background-color: #F5F5F5;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #E5E8E8), color-stop(1.0, #D5DBDB));
+    width:100px;
+     font-size: 10px; cursor:pointer;
+      
+}
+
+.TabActive
+{
+    border-style: solid;
+    border-width: 2px 2px 0px 2px;
+    border-color: #666666;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    color: #333300;
+    background-color: #F5F5F5;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #E5E8E8), color-stop(1.0, #D5DBDB));
+    width:100px;
+     font-size: 10px; cursor:pointer;
+      
+    
+}
+
+.ContextDBox
+{
+    color: #333300;
+    cursor: hand;
+    font-size: 10px;    
+    font-style:italic;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #e6d500;
+    background: -moz-linear-gradient(top, #e6d500, #e6d500);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #3c7854), color-stop(1.0, #05532a));
+   border: 1px solid #666666;
+}
+
+.Day
+{
+     color: #E6E6E6;
+      
+}
+.Cal
+{
+    border: 1px solid #818181;
+    height: 98%;
+    color: #E6E6E6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #29543A;
+    background-image1: url('Design/Calendar.png');
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #3c7854), color-stop(1.0, #05532a));
+    background-repeat: repeat;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tdCal
+{
+    font-size: 11px;
+    background-color: #40825A;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #40825A), color-stop(1.0, #40825A));
+}
+
+
+.MCalendar{
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #D6DBDF), color-stop(1.0, #D6DBDF));
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    color:#34495E; 
+   
+}
+.RCal
+{
+
+    border: 1px solid #818181;
+    height: 98%;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #EFEFEF;
+    background1: -moz-linear-gradient(left, #EFEFEF, #EFEFEF);
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #d1e1bf), color-stop(1.0, #c1d7a9));
+    box-shadow1: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    background1: rgba(185, 212, 209, 0.226);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.Heads
+{
+    font-size: 20px;
+    text-align: center;
+    color: #333333;
+    background-color: #FF6699;
+    overflow: hidden;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.HistoryMsg{
+
+    
+}
+.outerMsg{
+
+    border: 1px solid #7F8C8D;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px; 
+    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.msgs{
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    color: #21618C;
+    font-size: 11px;
+
+    border: 0px solid #7F8C8D;
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #f0f0f0), color-stop(1.0, #f0f0f0 ));
+
+
+}
+
+.ForwdMsg{
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    color: #E74C3C;
+    font-size: 11px;
+    
+    border: 0px solid #7F8C8D;
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #f0f0f0), color-stop(1.0, #CCD1D1 ));
+
+
+}
+
+
+.tdHistory{
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    border: 1px solid #7F8C8D;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FDEBD0), color-stop(1.0, #FAD7A0 ));
+ 
+}
+
+.VerticalTabs{
+
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, rgba(185, 212, 209, 0.452)), color-stop(1.0, rgba(181, 207, 204, 0.5)));
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #f3f3f3), color-stop(1.0,#d3d3d3));
+    
+     
+    background: rgba(185, 212, 209, 0.226);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px #c0c7c6 solid;
+
+}
+
+.Captions{
+
+    
+    background: rgba(185, 212, 209, 0.226);
+}
+
+.UIDS{
+    font-size: 10px;
+    font-weight: normal;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #f3f3f3), color-stop(1.0,#AEB6BF));
+
+   
+
+
+}
+.Clicked{
+
+    cursor:hand;
+    border: 1px solid #787878;  
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    
+    padding:5px;
+    font-size: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #f3f3f3), color-stop(1.0, #A9CCE3));
+   
+
+}
+.EClicks{
+
+    cursor:hand;
+    border:0px solid #787878;  
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding:2px;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #E5E8E8), color-stop(1.0,#AEB6BF));
+    cursor: pointer;
+    font-size: 11px;
+    text-decoration: underline;
+   
+
+}
+
+
+.Clicks{
+
+    cursor:hand;
+    border: 1px solid #787878;  
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding:2px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #E5E8E8), color-stop(1.0,#AEB6BF));
+    cursor: pointer;
+    font-size: 10px;
+    text-decoration: underline;
+   
+
+}
+
+
+.vals
+{
+    font-size: 25px; text-align: center; color: #FF3300; 
+    display: flex; 
+            justify-content: center; 
+            align-items: center; 
+    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.SBox
+{
+    font-size: 12px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #FF6666;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #dfdfdf), color-stop(1.0, #D1D1D1));
+    border: 0px solid #818181;
+    cursor: pointer;
+    overflow: auto;
+    color: #FFFFFF;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.DBox
+{
+    font-size: 12px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #FF6666;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #dfdfdf), color-stop(1.0, #D1D1D1));
+    border: 1px solid #818181;
+    cursor: pointer;
+    overflow: auto;
+    color: #FFFFFF;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.DResize
+{
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #d1e1bf), color-stop(1.0, #c1d7a9));
+  
+}
+.RBox
+{
+    border: 1px solid #818181;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #D4D4D4;
+    background: -moz-linear-gradient(left, #EEEEEE, #D4D4D4);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #EEEEEE), color-stop(1.0, #D4D4D4));
+    color: #808080;
+}
+
+.LayerName
+{
+    background-color: #FF9900;
+    background: -moz-linear-gradient(top, #e6d500, #e6d500);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #e6d500), color-stop(1.0, #ccbe00));
+    border: 1px solid #666666;
+    cursor: hand;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 25px;
+    padding:10px;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #3c7854), color-stop(1.0, #05532a));
+}
+
+.BContainer
+{
+    border: 0px solid #FF9900;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #CFF3CF), color-stop(1.0, #c1d7a9));
+    background-color1: #CFF3CF;
+}
+.Chart
+{
+    border: 0px solid #FF9900;
+    background1: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #CFF3CF), color-stop(1.0, #c1d7a9));
+    background-color1: #CFF3CF;
+}
+
+.dEditor
+{
+        overflow:auto;height:800px;width:1400px; font-size:14px;background-color:#d1e1bf;padding:5mm;line-height: 1.3;white-space: pre;
+    
+}
+.SQLEditor
+{
+    overflow: auto;
+    height: 500px;
+    width: 600px;
+    font-size: 12px;
+    background-color: #c1d7a9;
+    padding: 2mm;
+    line-height: 1.3;
+    white-space: pre;
+}
+
+.Editor
+{
+    margin: 2px;
+    border: 1px solid #808080;
+    line-height: 1.3;
+    font-size: 12px;
+    text-align: left;
+    background-color: #c1d7a9;
+}
+
+.dSQL
+{
+        overflow:auto;height:50px;width:1400px; font-size:14px;background-color:#c1d7a9;padding:5mm;line-height: 1.3;white-space: pre;text-align:left;
+    
+}
+
+
+.CE
+{
+ contentEditable:true;   
+}
+
+
+.Tabs
+{
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    height: 5px;
+    color: #DF8600;
+    font-size: 12px;
+    padding: 5px 5px;
+    font-weight: bold;
+    text-decoration: underline;
+  
+}
+
+.txtMain { width: 90%;  font-weight:bold;   }
+.txtD { width: 75%; }
+.txtDrop {  width: 90%; }
+.txts { width: 90%; }
+.txtSize
+{
+    color: #FFFFFF;
+}
+.tAuto {    width: 90%; text-align: center; font-weight: bold;  }
+.tAutoSize {    padding: 3px 3px;       text-align: center;   width:40%;    }
+
+
+.RLog
+{
+    border: 1px solid #818181;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #60AFFF;
+    background: -moz-linear-gradient(left, #99CCFF, #60AFFF);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #99CCFF), color-stop(1.0, #60AFFF));
+    transition: 1s;
+    color: Black;
+}   
+
+
+
+
+.val
+{
+    border: 0px solid #FDFDFD;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    padding: 5px;
+    color: #333333;
+}
+
+
+
+
+
+.Levels
+{
+     padding:10px; color:Black;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+
+.Current
+{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: #D78100;
+    padding: 6px;
+    color: #333333;
+}
+
+
+
+.divLevels
+{
+    width: 80px;
+    height: 100px;
+    color: #FFFFFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    font-size: 10px;
+    padding-left: 4px;
+}
+
+
+.divCompleted
+{
+    background-color: #37DD00;
+    color: #333333;
+}
+
+.divCurrent
+{
+    background-color: #D78100;
+    color: #333333;
+    height: 100px;
+}
+
+.divInitiated
+{
+    background-color: #FF99FF;
+    color: #333333;
+    height: 100px;
+}
+
+.divForward
+{
+    background-color: #00BF00;
+    color: #333333;
+    height: 100px;
+}
+
+.divRejected
+{
+    background-color: #FF6600;
+    color: #333333;
+    height: 100px;
+}
+
+.divCancelled
+{
+    background-color: #CC9900;
+    color: #333333;
+    height: 100px;
+}
+
+.divApproved
+{
+    background-color: #3399FF;
+    color: #333333;
+    height: 100px;
+}
+
+
+.divApplied
+{
+    background-color: #CACA00;
+    color: #333333;
+    height: 100px;
+}
+
+.Pending
+{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: #66CCFF;
+    padding: 10px 15px 10px 10px;
+    color: #333333;
+}
+
+
+.Completed
+{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: #6CDB6C;
+   padding: 10px 15px 10px 10px;
+    color: #333333;
+}
+
+.Waiting
+{
+     -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: #D78100;
+     padding: 10px 15px 10px 10px;
+    color: #333333;
+}
+
+
+.User
+{
+    border-color: #FFCC00;
+    font-size: 8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+
+.L1
+{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: #5F5F5F;
+    background: -moz-linear-gradient(top, #7E7E7E, #5F5F5F);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #7E7E7E), color-stop(1.0, #5F5F5F));
+}
+.L2
+{
+    background-color: #929292;
+}
+.L3
+{
+    background-color: #929292;
+}
+.L4
+{
+    background-color: #929292;
+}
+.L5
+{
+    background-color: #929292;
+}
+.L6
+{
+    background-color: #929292;
+}
+
+
+
+
+
+.float
+{
+    color: Red;
+    text-align: right;
+}
+.integer
+{
+    color:blue;  text-align: right;
+}
+
+
+.Temp
+{
+    background-color: #FFCC66;
+}
+
+
+.Import
+{
+    
+}
+
+
+.HeadCont
+{
+    background-color: #EBEBEB;
+    background: -moz-linear-gradient(top, #EBEBEB, #E1E1E1);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #EBEBEB), color-stop(1.0, #E1E1E1));
+    color: #333333;
+}
+
+
+.subHeader
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 5px;
+    color: #333333;
+    font-size: 15px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.RunningNo
+{
+     -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    padding: 5px;
+    background-color: #66CCFF;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.HelpHeader
+{
+      -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+    padding: 10px;
+    height:50px;
+    width:300px;
+    background: -moz-linear-gradient(top, #FFB76F, #FFB76F);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FFB76F), color-stop(1.0, #FFB76F));
+    background-color: #FFB76F;
+}
+
+
+.MenusHeader
+{
+      cursor: hand;
+    color: #E6E6E6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 40px;
+    background-image: url('Design/Base1.png');
+    background-repeat: repeat;  
+}
+
+.HeaderRight
+{
+      cursor: hand;
+    color: #E6E6E6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 25px;
+    background-image: url('Design/HeaderRight.png');
+}
+
+
+.FormHeading
+{
+     cursor: hand;
+    color: #E6E6E6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 25px;
+    background-color: #A9BADE;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #7f9acf), color-stop(1.0, #295596ad));
+}
+
+
+
+
+
+.ODS
+{
+    background-color: #CCFF33;
+    color: #333333;
+      
+          FONT-SIZE: 10px;
+}
+
+.PMS
+{
+    background-color: #FF6699;
+    color: #333333;
+     
+  
+      FONT-SIZE: 10px;
+
+      
+      display: block;height:20px;text-align:center; vertical-align: middle;text-transform: uppercase;   
+}
+
+.OTS
+{
+    background-color: #9999FF;
+    color: #333333;
+  
+      FONT-SIZE: 10px;
+       
+      
+      display: block;height:20px;text-align:center; vertical-align: middle;text-transform: uppercase;   
+}
+
+.LTS
+{
+    background-color: #FF9933;
+    color: #333333;
+   
+      FONT-SIZE: 10px;
+      
+      
+      display: block;height:20px;text-align:center; vertical-align: middle;text-transform: uppercase;   
+}
+
+.ELS
+{
+    background-color: #00FF99;
+    color: #333333;
+      FONT-SIZE: 10px;
+      display: block;height:20px;text-align:center; vertical-align: middle;text-transform: uppercase;   
+      
+}
+
+.WHS
+{
+    color: #009900;
+    font-size: 10px;
+      display: block;height:20px;text-align:center; vertical-align: middle;text-transform: uppercase;   
+}
+
+.SN
+{
+  
+    font-size: 10px;
+      
+      display: block;height:20px;text-align:center; vertical-align: middle;text-transform: uppercase;   
+   
+}
+
+.WO{ background-color:#FF33FF;  }
+.WP{  border-style: none;background-color:#a7c4f9;padding:4px;color:Black;  }
+
+.X {   background-color:#a7c4f9; color:Black; }
+.OD{  background-color:#eed0e9;  color:Black;}
+.OF{  background-color:#000099; color:Black; }
+.OS{  background-color:#996666; color:Black; }
+
+.AA{  background-color:#FF3300;color:Black;  }
+.AF{  background-color:#FFFF00; color:Black; }
+.AS{  background-color:#CC66FF; color:Black; }
+
+.CO{  background-color:#3344FF; color:Black; }
+.CA{  background-color:#ffcccc;color:Black;  }
+.CB{  background-color:#66ffcc; color:Black; }
+
+
+.C{  background-color:#996600; color:Black; }
+.CL{  background-color:#996600;color:Black;  }
+.CF{  background-color:#336633;color:Black;  }
+.CS{  background-color:#00cccc; color:Black; }
+
+
+.L{  background-color:#66FF00; color:Black; }
+.LL{  background-color:#66FF00; color:Black; }
+.LF{  background-color:#CCCCCC; color:Black; }
+.LS{  background-color:#99CC00; color:Black; }
+
+
+.E{  background-color:#006633; color:Black;}
+.EL{  background-color:#006633;  color:Black; }
+.EF{  background-color:#993366; color:Black; }
+.ES{  background-color:#003366;color:Black;  }
+
+.O{  background-color:#eed0e9; color:Black;}
+
+.PL{  background-color:#a8a800; color:Black;}
+
+.ML{  background-color:#990000;}
+.MF{  background-color:#cc6633;}
+.MS{  background-color:#cc9900;}
+
+
+
+
+.OT{  background-color:#bfc7bf;}
+.PM{  background-color:#CC0033;}
+.RL{  background-color:Khaki;}
+
+
+.S {  background-color:#e9e7a6;color:#FFFFFF;}
+.T {  background-color:#bff877;}
+.I {  background-color:#ced1f9;}
+
+.B {  background-color:#ffffff;color:White ; }
+.G {  background-color:#009966;color:White ;}
+
+
+
+
+
+
+
+
+ .LoginProcess
+{   
+    background-color: #FF9900;
+    color: white;
+    padding: 10px 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.PM
+{
+    background-color: #FF9999;
+}
+
+.OnDuty
+{
+    background-color: #0099FF;
+}
+
+.Manual
+{
+    background-color: #6666FF;
+}
+
+.Profile
+{
+    background-color: #33CC33;
+}
+
+
+
+.Notes
+{
+    padding: 20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #E1D000;
+    color: #333300;
+    background: -moz-linear-gradient(top, #e6d500, #e6d500);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #E1D000), color-stop(1.0, #ccbe00));
+    border: 2px solid #C0C0C0;
+    cursor: pointer;
+    overflow: auto;
+    position: absolute;
+box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+
+.RWhite
+{
+    border: 2px solid #616161;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #CECECE;
+    background: -moz-linear-gradient(left, #CECECE, #B1B1B1);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #CECECE), color-stop(1.0, #B1B1B1));
+    color: #333333;
+    height: 300px;
+    width: 300px;
+}
+
+.ROrange
+{
+    border: 2px solid #FF9900;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #FFCE84;
+    background: -moz-linear-gradient(left, #FFCE84, #FFBD5B);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FFCE84), color-stop(1.0, #FFBD5B));
+    color: #333333;
+    height: 300px;
+    width: 300px;
+}
+
+td.ROrange 
+{
+    background-color: #FF9900;
+    color: #333333;
+}   
+
+
+.RBlue
+{
+    border: 2px solid #3399FF;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #6CB6FF;
+    background: -moz-linear-gradient(left, #91C8FF, #6CB6FF);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #91C8FF), color-stop(1.0, #6CB6FF));
+    color: #333333;
+    height: 300px;
+    width: 300px;
+}
+
+.RRed
+{
+    border: 2px solid #FF3300;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #FFAF9B;
+    background: -moz-linear-gradient(left, #FFAF9B, #FF8A6C);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FFAF9B), color-stop(1.0, #FF8A6C));
+    color: #333333;
+    height: 300px;
+    width: 300px;
+}
+
+
+.RGreen
+{
+    border: 2px solid #33CC33;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #9FE89F;
+    background: -moz-linear-gradient(left, #9FE89F, #75DD75);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #9FE89F), color-stop(1.0, #75DD75));
+    color: #333333;
+    height: 300px;
+    width: 300px;
+}
+
+
+.Q1
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #F2F2F2;
+    background: -moz-linear-gradient(left, #F2F2F2, #EFEFEF);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #F2F2F2), color-stop(1.0, #EFEFEF));
+    color: #333333;
+}
+
+.A1
+{
+    border: 1px solid #616161;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #CECECE;
+    background: -moz-linear-gradient(left, #CECECE, #F2F2F2);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #CECECE), color-stop(1.0, #F2F2F2));
+    color: #333333;
+    height: 50px;
+}
+
+
+
+
+.btnReload
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor: pointer;
+    background-color: #B0B0B0;
+    background: -moz-linear-gradient(top, #B0B0B0, #666666);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #B0B0B0), color-stop(1.0, #666666));
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 9px;
+    padding: 3px 3px;
+    height: 25px;
+}
+
+
+
+
+.btnApply
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor: pointer;
+    background-color: #FF9999;
+    background: -moz-linear-gradient(top, #FFBB55, #FF9900);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FFBB55), color-stop(1.0, #FFBB55));
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 9px;
+    padding: 3px 3px;
+    height: 25px;
+}
+
+
+.btnApprove
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor: pointer;
+    background-color: #99FF33;
+    background: -moz-linear-gradient(top, #FF7553, #FF4415);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FF7553), color-stop(1.0, #FF4415));
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 9px;
+    padding: 3px 3px;
+    height: 25px;
+}
+
+
+
+.btnCancel
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor: pointer;
+    background-color: #FF71FF;
+    background: -moz-linear-gradient(top, #FF71FF, #FF00FF);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FF71FF), color-stop(1.0, #FF00FF));
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 9px;
+    padding: 3px 3px;
+    height: 25px;
+}
+
+
+.btnForward
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor: pointer;
+    background-color: #FFC66F;
+    background: -moz-linear-gradient(top, #CC99FF, #CC99FF);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #CC99FF), color-stop(1.0, #CC99FF));
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 9px;
+    padding: 3px 3px;
+    height: 25px;
+}
+
+
+
+.btnReject
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor: pointer;
+    background-color: #FF6600;
+    background: -moz-linear-gradient(top, #8BE28B, #33CC33);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #8BE28B), color-stop(1.0, #33CC33));
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 9px;
+    padding: 3px 3px;
+    height: 25px;
+}
+
+
+
+
+
+.EditorHTML
+{
+    padding: 20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 2px solid #C0C0C0;
+    cursor: pointer;
+    overflow: auto;
+    position: absolute;
+    color: #333333;
+    background-color: #E1E1E1;
+}
+
+.HELP
+{
+   border: 1px solid #6A6A6A;
+    height: 98%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+    right: 0px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #8BB854;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #99C069), color-stop(1.0, #8BB854));
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #FCFCFC;
+ 
+}
+
+
+
+.StickyHead
+{
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.StickyNotes
+{
+     color: #333333;
+     padding:5mm;
+     line-height: 1.3;
+     white-space: pre;   
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+
+
+
+
+.Boxes
+{
+  
+    font-size: 12px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    
+    background-color: #ECF0F1;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ECF0F1), color-stop(1.0, #e6e6e7));
+
+     
+    border: 1px solid #555454;
+    cursor: pointer;
+    overflow: auto;
+    
+box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+::-webkit-scrollbar {   width: 0px;    }
+::-webkit-scrollbar-track { box-shadow: inset 0 0 0px F8F9F9;   border-radius: 10px;    }
+::-webkit-scrollbar-thumb { background: #F8F9F9; border-radius: 10px;   }
+
+.scroll1 {
+    height: 20px;	
+    overflow: inherit;
+    position: relative;
+   }
+
+
+   .scroll1 h5 {
+    font-size: 2em;
+    color: #e6d500;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    margin: 0;
+    line-height: 20px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: scroll1 15s linear infinite;
+    -webkit-animation: scroll1 15s linear infinite;
+    animation: scroll1 15s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes scroll1 {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes scroll1 {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes scroll1 {
+    0%   { 
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%); 
+    }
+   }
+
+
+
+.G
+{
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+
+.H
+{
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #3399FF;
+}
+
+.UnHide
+{
+    background-color: #99CCFF;
+}
+
+
+.G
+{
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+.Entry
+{
+   
+}
+.st
+{
+    background-color: #99E699;
+}
+
+.Types
+{
+   border: 1px solid #CECECE;  -moz-border-radius: 5px;-webkit-border-radius: 5px; height:50px;width:200px;  padding: 10px 20px 10px 20px;
+}
+.Numbers
+{
+   border: 1px solid #CECECE;  -moz-border-radius: 5px;-webkit-border-radius: 5px; height:50px;width:25px;  padding: 10px 15px 10px 15px;
+}
+.Leave
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: -moz-linear-gradient(top, #939393, #939393);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #90b1d6), color-stop(1.0, #90b1d6));
+    border: 1px solid #787878;  
+}
+
+
+.TA{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    
+    
+    background-color: #e09fc7;
+}
+
+
+
+.TAClaim{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    
+    
+    background-color: #e09fc7;
+    border: 1px solid #787878;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #e09fc7), color-stop(1.0, #e09fc7));
+  
+}
+
+
+
+.COMP{
+    background-color: #a5e0c5;
+    border: 1px solid #787878;  
+}
+
+.Compoff{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #e09fc7;
+    border: 1px solid #787878;  
+}
+
+.CORequest{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #a5e0c5;
+    border: 1px solid #787878;   
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #a5e0c5), color-stop(1.0, #a5e0c5));
+
+
+}
+.settings{
+    color: #000000;
+}
+
+
+
+#myUL {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .caret {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 12px;
+   
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+  
+  }
+  
+  .caret::before {
+      padding: 5px;
+      font-size: 14px;
+      
+    content: "\25B6";
+    color: rgb(224, 27, 27);
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+  .caret-down::before {
+    
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */'
+    transform: rotate(90deg);  
+  }
+  
+  
+  .nested {
+    display: none;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ededed), color-stop(1.0, #ededed ));
+  }
+  
+  .active {
+    display: block;
+  }
+  
+
+
+.caret 
+{
+    cursor: pointer;
+    line-height: 1.5em;
+      background-position: 0 0;
+     background-size: 0.9rem 0.9rem;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+    font-size: 10px;
+    padding-left: 20px;
+    
+}
+
+
+.TreeHeader
+{
+    position: inherit;
+    top: expression(this.offsetParent.scrollTop);
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    height: 20px;
+    color: #FFFFFF;
+    background-image: url('tabs/Green.png');
+    background-repeat: repeat;
+    padding: 2px 2px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+
+
+.CTreeHeader
+{
+   
+    position: inherit;
+    top: expression(this.offsetParent.scrollTop);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 40px;
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #348096), color-stop(1.0, #01607c));
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 5px;
+    top:1px;bottom:100px;
+    position:relative;
+     color: #E6E6E6;
+    cursor: pointer;
+   
+}
+
+.DTreeSelect
+{
+     -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background-color: #FF9966;
+    background: -moz-linear-gradient(top, #FFBE9F, #FF9966);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FFBE9F), color-stop(1.0, #FF9966));
+         BACKGROUND-IMAGE: url('tabs/BlueDark.png');     
+    color:white;
+}
+
+
+.DContentSmall
+{
+  
+    color: #000000;
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #f0f0f0), color-stop(1.0, #ededed ));
+ 
+}
+
+tr.DSelect td
+{
+    cursor: hand;
+    background-color: #737373;
+    background: -moz-linear-gradient(top, #7C7C7C, #737373);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #7C7C7C), color-stop(1.0, #737373));
+    padding: 2px 2px;
+}
+
+tr.DMove1 td
+{
+    cursor: hand;
+    background-color: #666666;
+}
+
+
+.nested { display: none;    }
+.active { display:inline-block;   }
+
